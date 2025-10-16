@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Mil lieues - a blog about my research",
+    "section": "",
+    "text": "Welcome to Mil Lieues\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nOct 16, 2025\n\n\nDavid Colliaux\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/2025-10-16-welcome/index.html",
+    "href": "posts/2025-10-16-welcome/index.html",
+    "title": "Welcome to Mil Lieues",
+    "section": "",
+    "text": "Hey! This is a blog about various scientific topics that I find interesting. I will post here my random thoughts and ideas related to modeling, machine learning and biology.\nimport numpy as np\n\ndef fact(n):\n    return np.prod(range(1, n + 1))"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Hello, I am David Colliaux researcher at Sony CSL - Paris. This is a blog to post random thoughts (mainly about my research)."
+  }
+]
