@@ -38,6 +38,10 @@ jobs:
         with:
           # Upload entire repository
           path: '.'
+      - name: Build and move files
+        run: |
+          mkdir -p public
+          cp -r src/my-folder/* public/
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
