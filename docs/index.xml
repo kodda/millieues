@@ -10,7 +10,101 @@
 <atom:link href="https://kodda.github.io/millieues/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.25</generator>
-<lastBuildDate>Wed, 15 Oct 2025 22:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 16 Oct 2025 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>The sound of photosynthesis</title>
+  <dc:creator>David Colliaux</dc:creator>
+  <link>https://kodda.github.io/millieues/posts/2025-10-17-The-sound-of-photosynthesis/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+<section id="the-photosynthetic-electron-transport-chain" class="level1">
+<h1>The photosynthetic electron transport chain</h1>
+<p>Plants are converting <img src="https://latex.codecogs.com/png.latex?CO_2"> into <img src="https://latex.codecogs.com/png.latex?O_2"> and glucose via light energy through photosynthesis. This process is decomposed into : first the light reaction converting light energy into chemical energy (ATP), then the dark reaction responsible for the assimilation of CO<img src="https://latex.codecogs.com/png.latex?_2"> into glucose. We talk here about the first part which consist in a cascade of oxydo-reduction reaction called the photosynthetic electron transport chain (PETC).</p>
+<p>Photons hitting the antennas attached to the membrane of the chloroplasts are absorbed and create a flow of electrons through the chain but a small portion of the energy is re-emitted through the chlorophyll fluorescence. It is possible to measure this fluorescence in response to light stimulation to probe the PETC and actually several locations in the PETC can be probed through this technique: the reactions centers (P700) and the various redox pools (plastocyanine PC, or ferredoxin Fd) visible on the figure below.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://kodda.github.io/millieues/posts/2025-10-17-The-sound-of-photosynthesis/petc.png" class="img-fluid figure-img"></p>
+<figcaption>The photosynthetic electron transport chain (PETC) showing the flow of electrons from photosystem II (PSII) through the cytochrome b6f complex to photosystem I (PSI), with key components like plastocyanin (PC) and ferredoxin (Fd) indicated</figcaption>
+</figure>
+</div>
+</section>
+<section id="sonification-of-the-petc" class="level1">
+<h1>Sonification of the PETC</h1>
+<p>It is possible to study such non-linear systems by sinewave stimulation and tracking harmonics in the response spectrum, higher harmonics being indicative of non-linearities in the system. Ladislav Nedbal in his <a href="https://ac-biology.com/wp-content/uploads/2025/09/2-Nedbal-123.pdf">talk</a> at the DREAM workshop 2025 suggested, from visual inspection, that the waveform of the fluorescence he measured in response to oscillating light is similar to that of a saxophone.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://kodda.github.io/millieues/posts/2025-10-17-The-sound-of-photosynthesis/sax.png" class="img-fluid figure-img"></p>
+<figcaption>Slide extracted from Ladislav’s talk at the DREAM workshop 2025</figcaption>
+</figure>
+</div>
+<p>This sounded interesting to me so I decided to listen to the timber of the PETC through sonification of the various signals recorded in the study of Yuxi Niu and al. <span class="citation" data-cites="niu2023plants">(Niu et al. 2023)</span> on Arabidopsis thaliana plants exposed to fluctuating light.</p>
+<p>For each of the observables (Light, Chlorohyll Fluorescence, PC, Fd and P700), I collected the cleaned waveform were only the first 4 harmonics were kept at various frequencies. I then rescaled the timeseries to a 440HZ signal and added a Hanning window to give a simple dynamics envelope.</p>
+<p>You can hear the result below. Except for the Light signal which is always a pure sine wave, the timber is quite different depending on the frequency…That’s how photosynthesis sounds!</p>
+<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+<div style="flex: 1; min-width: 300px; text-align: center;">
+<video width="100%" controls="">
+<source src="./Light_fit.mp4" type="video/mp4">
+Your browser does not support the video tag. </video>
+<p>
+<strong>Light Signal</strong>
+</p>
+</div>
+<div style="flex: 1; min-width: 300px; text-align: center;">
+<video width="100%" controls="">
+<source src="./Fluo_fit.mp4" type="video/mp4">
+Your browser does not support the video tag. </video>
+<p>
+<strong>Chlorophyll Fluorescence</strong>
+</p>
+</div>
+<div style="flex: 1; min-width: 300px; text-align: center;">
+<video width="100%" controls="">
+<source src="./PC_fit.mp4" type="video/mp4">
+Your browser does not support the video tag. </video>
+<p>
+<strong>Plastocyanin (PC)</strong>
+</p>
+</div>
+<div style="flex: 1; min-width: 300px; text-align: center;">
+<video width="100%" controls="">
+<source src="./Fd_fit.mp4" type="video/mp4">
+Your browser does not support the video tag. </video>
+<p>
+<strong>Ferredoxin (Fd)</strong>
+</p>
+</div>
+<div style="flex: 1; min-width: 300px; text-align: center;">
+<video width="50%" controls="">
+<source src="./P700_fit.mp4" type="video/mp4">
+Your browser does not support the video tag. </video>
+<p>
+<strong>P700 Reaction Center</strong>
+</p>
+</div>
+</div>
+<p><em>The sound of photosynthesis at different frequencies</em></p>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="ref-niu2023plants" class="csl-entry">
+Niu, Yuxi, Dušan Lazár, Alfred R Holzwarth, David M Kramer, Shizue Matsubara, Fabio Fiorani, Hendrik Poorter, Silvia D Schrey, and Ladislav Nedbal. 2023. <span>“Plants Cope with Fluctuating Light by Frequency-Dependent Nonphotochemical Quenching and Cyclic Electron Transport.”</span> <em>New Phytologist</em> 239 (5): 1869–86.
+</div>
+</div>
+
+
+</section>
+</section> ]]></description>
+  <category>photosynthesis</category>
+  <category>sonification</category>
+  <category>plants</category>
+  <guid>https://kodda.github.io/millieues/posts/2025-10-17-The-sound-of-photosynthesis/</guid>
+  <pubDate>Thu, 16 Oct 2025 22:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Welcome to Mil Lieues</title>
   <dc:creator>David Colliaux</dc:creator>
