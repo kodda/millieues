@@ -43,7 +43,7 @@
 </figure>
 </div>
 <p>This sounded interesting to me so I decided to listen to the timber of the PETC through sonification of the various signals recorded in the study of Yuxi Niu and al. <span class="citation" data-cites="niu2023plants">(Niu et al. 2023)</span> on Arabidopsis thaliana plants exposed to fluctuating light.</p>
-<p>For each of the observables (Light, Chlorohyll Fluorescence, PC, Fd and P700), I collected the cleaned waveform were only the first 4 harmonics were kept at various frequencies. I then rescaled the timeseries to a 440HZ signal and added a Hanning window to give a simple dynamics envelope.</p>
+<p>For each of the observables (Light, Chlorohyll Fluorescence, PC, Fd and P700), I collected the cleaned waveform where only the first 4 harmonics were kept at various frequencies. I then rescaled the timeseries to a 440HZ signal and added a Hanning window to give a simple dynamics envelope.</p>
 <p>You can hear the result below. Except for the Light signal which is always a pure sine wave, the timber is quite different depending on the frequency…That’s how photosynthesis sounds!</p>
 <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
 <div style="flex: 1; min-width: 300px; text-align: center;">
