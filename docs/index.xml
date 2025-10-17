@@ -22,8 +22,8 @@
 
 
 
-<section id="the-photosynthetic-electron-transport-chain" class="level1">
-<h1>The photosynthetic electron transport chain</h1>
+<section id="the-photosynthetic-electron-transport-chain" class="level2">
+<h2 class="anchored" data-anchor-id="the-photosynthetic-electron-transport-chain">The photosynthetic electron transport chain</h2>
 <p>Plants are converting CO_2 into O_2 and glucose via light energy through photosynthesis. This process is decomposed into : first the light reaction converting light energy into chemical energy (ATP), then the dark reaction responsible for the assimilation of CO<img src="https://latex.codecogs.com/png.latex?_2"> into glucose. We talk here about the first part which consist in a cascade of oxydo-reduction reaction called the photosynthetic electron transport chain (PETC).</p>
 <p>Photons hitting the antennas attached to the membrane of the chloroplasts are absorbed and create a flow of electrons through the chain but a small portion of the energy is re-emitted through the chlorophyll fluorescence. It is possible to measure this fluorescence in response to light stimulation to probe the PETC and actually several locations in the PETC can be probed through this technique: the reactions centers (P700) and the various redox pools (plastocyanine PC, or ferredoxin Fd) visible on the figure below.</p>
 <div class="quarto-figure quarto-figure-center">
@@ -33,8 +33,8 @@
 </figure>
 </div>
 </section>
-<section id="sonification-of-the-petc" class="level1">
-<h1>Sonification of the PETC</h1>
+<section id="sonification-of-the-petc" class="level2">
+<h2 class="anchored" data-anchor-id="sonification-of-the-petc">Sonification of the PETC</h2>
 <p>It is possible to study such non-linear systems by sinewave stimulation and tracking harmonics in the response spectrum, higher harmonics being indicative of non-linearities in the system. Ladislav Nedbal in his <a href="https://ac-biology.com/wp-content/uploads/2025/09/2-Nedbal-123.pdf">talk</a> at the DREAM workshop 2025 suggested, from visual inspection, that the waveform of the fluorescence he measured in response to oscillating light is similar to that of a saxophone.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
