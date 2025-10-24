@@ -387,7 +387,7 @@ window.Quarto = {
 <figcaption>Basic Dream Model v2: The dynamics of the components marked in green are described by the system of ODEs below (figure extracted from <span class="citation" data-cites="niu2025constitutive">(<a href="#ref-niu2025constitutive" role="doc-biblioref">Niu et al. 2025</a>)</span></figcaption>
 </figure>
 </div>
-<p>The model is described by the following system of ODEs: [shinylive]<span class="math display">\[
+<p>The model is described by the following system of ODEs: <span class="math display">\[
 \begin{align*}
 \frac{dPQ}{dt} &amp;= v_2 - v_1 + 2v_8 \\
 \frac{dPI_{ox}}{dt} &amp;= v_I - v_2 \\
@@ -428,8 +428,6 @@ v_{I} &amp;= n_{PSI} \cdot \sigma_{I0} \cdot \left( \frac{L \cdot L_{12}}{L + L_
 #|   Please set `embed-resources: false` in your metadata.
 #| standalone: true
 #| viewerHeight: 700
-import micropip
-await micropip.install("shiny")
 from shiny import App, ui, render, reactive
 import numpy as np
 import matplotlib.pyplot as plt
@@ -583,7 +581,7 @@ app_ui = ui.page_sidebar(
         ui.input_numeric("frequency", "Frequency (Hz)", 1),
         ui.input_action_button("run", "Run Simulation"),
         open="open",
-    ),[shinylive]
+    ),
     ui.card(
         ui.output_plot("plot")
     ),
@@ -607,7 +605,7 @@ def server(input, output, session):
         dt = get_dt(1./p["stim"]["T"])
         ts, L, sols, x0 = one_run(p, 3, dt)
         F = get_ChlF(p, L, sols)
-        F0 =get_ChlF_s[shinylive]ingle_val(p, p["stim"]["L0"], x0)
+        F0 =get_ChlF_single_val(p, p["stim"]["L0"], x0)
         
         return ts, F, F0, x0
 

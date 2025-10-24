@@ -348,7 +348,7 @@ Your browser does not support the video tag. </video>
 </p>
 </div>
 </div>
-<p><em>The sound of photosynthesis at different frequencies</em> The curves are parametrized by the phase of the light excitation: <img src="https://latex.codecogs.com/png.latex?R(%5Ctheta)%20=%20R_0+A(%5Ctheta)"> where <img src="https://latex.codecogs.com/png.latex?A()%5Ctheta)"> is the waveform of the enveloppe.</p>
+<p><em>The sound of photosynthesis at different frequencies</em> The curves are parametrized by the phase of the light excitation: <img src="https://latex.codecogs.com/png.latex?R(%5Ctheta)%20=%20R_0+A(%5Ctheta)"> where <img src="https://latex.codecogs.com/png.latex?A(%5Ctheta)"> is the waveform of the response.</p>
 <p>I received useful comments from collaborators of the DREAM workshop 2025, in particular from Ladislav Nedbal, Dusan LAzar and Benjamin Bailleul. Thanks to them for their feedback.</p>
 <section id="references" class="level2">
 <h2 class="anchored" data-anchor-id="references">References</h2>
