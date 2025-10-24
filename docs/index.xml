@@ -10,7 +10,264 @@
 <atom:link href="https://kodda.github.io/millieues/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.25</generator>
-<lastBuildDate>Thu, 16 Oct 2025 22:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 23 Oct 2025 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>Modelling photosynthesis regulation</title>
+  <dc:creator>David Colliaux</dc:creator>
+  <link>https://kodda.github.io/millieues/posts/2025-10-24-Modelling-photosynthesis-regulation/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+<p>We saw about the fluorescence response of plants to oscillating light stimulation in a previous post. I want here to present a model for these responses based on a system of ordinary differential equations. We consider the following components:</p>
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?PQ">: the concentration of plastoquinone</li>
+<li><img src="https://latex.codecogs.com/png.latex?PI_%7Box%7D">: the concentration of plastocyanin</li>
+<li><img src="https://latex.codecogs.com/png.latex?Zea">: the concentration of zeaxanthin</li>
+<li><img src="https://latex.codecogs.com/png.latex?Psb">: the concentration of plastocyanin</li>
+<li><img src="https://latex.codecogs.com/png.latex?HL">: the concentration of hydrogen ions in the thylakoid lumen</li>
+<li><img src="https://latex.codecogs.com/png.latex?ATP">: the concentration of adenosine triphosphate</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://kodda.github.io/millieues/posts/2025-10-24-Modelling-photosynthesis-regulation/BDMv2.png" class="img-fluid figure-img"></p>
+<figcaption>Basic Dream Model v2: The dynamics of the components marked in green are described by the system of ODEs below (figure extracted from <span class="citation" data-cites="niu2025constitutive">(Niu et al. 2025)</span></figcaption>
+</figure>
+</div>
+<p>The model is described by the following system of ODEs: <img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Balign*%7D%0A%5Cfrac%7BdPQ%7D%7Bdt%7D%20&amp;=%20v_2%20-%20v_1%20+%202v_8%20%5C%5C%0A%5Cfrac%7BdPI_%7Box%7D%7D%7Bdt%7D%20&amp;=%20v_I%20-%20v_2%20%5C%5C%0A%5Cfrac%7BdZea%7D%7Bdt%7D%20&amp;=%20v_3%20-%20v_4%20%5C%5C%0A%5Cfrac%7BdPsb%7D%7Bdt%7D%20&amp;=%20v_9%20-%20v_%7B10%7D%20%5C%5C%0A%5Cfrac%7BdHL%7D%7Bdt%7D%20&amp;=%20b_H%20%5Ccdot%20%5Cleft%5B%20%5Cfrac%7Bv_%7BII%7D%20+%20v_2%7D%7BN_A%20%5Ccdot%20vol_%7BLum%7D%7D%20-%20%5Cfrac%7B14%7D%7B3%7D%20%5Ccdot%20%5Cleft(%20%5Cfrac%7Bvol_%7BStr%7D%7D%7Bvol_%7BLum%7D%7D%20%5Cright)%20%5Ccdot%20v_5%20-%20v_7%20%5Cright%5D%20%5C%5C%0A%5Cfrac%7BdATP%7D%7Bdt%7D%20&amp;=%20v_5%20-%20v_6%0A%5Cend%7Balign*%7D%0A"></p>
+<p>with the following reaction rates: <img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Baligned%7D%0Av_1%20&amp;=%20k_%7B1p%7D%20%5Ccdot%20%5Ctext%7Bclosed%7D%20%5Ccdot%20PQ%20-%20k_%7B1m%7D%20%5Ccdot%20(1%20-%20%5Ctext%7Bclosed%7D)%20%5Ccdot%20(PQ_%7Btot%7D%20-%20PQ)%20%5C%5C%0Av_2%20&amp;=%20k_%7B2p%7D%20%5Ccdot%20(PQ_%7Btot%7D%20-%20PQ)%20%5Ccdot%20PI_%7Box%7D%20-%20k_%7B2m%7D%20%5Ccdot%20PQ%20%5Ccdot%20(PI_%7Btot%7D%20-%20PI_%7Box%7D)%20%5C%5C%0Av_3%20&amp;=%20k_3%20%5Ccdot%20%5Cfrac%7B1%20-%20Zea%7D%7B1%20+%20%5Cleft(%20%5Cfrac%7BkQ%5E%7BZea%7D%7D%7BHL%7D%20%5Cright)%5E%7Bn_%7BZea%7D%7D%7D%20%5C%5C%0Av_4%20&amp;=%20k_4%20%5Ccdot%20Zea%20%5C%5C%0Av_5%20&amp;=%20k_5%20%5Ccdot%20%5Cleft%5B%20(A_%7Btot%7D%20-%20ATP)%20-%20a%20%5Ccdot%20ATP%20%5Ccdot%20%5Cleft(%20%5Cfrac%7B1%7D%7BHL%7D%20%5Cright)%5E%7B14/3%7D%20%5Cright%5D%20%5C%5C%0Av_6%20&amp;=%20k_6%20%5Ccdot%20ATP%20%5C%5C%0Av_7%20&amp;=%20k_7%20%5Ccdot%20(HL%20-%20H_%7B%5Ctext%7Bstroma%7D%7D)%20%5C%5C%0Av_8%20&amp;=%20k_8%20%5Ccdot%20(PQ_%7Btot%7D%20-%20PQ)%20%5C%5C%0Av_9%20&amp;=%20k_9%20%5Ccdot%20%5Cfrac%7B1%20-%20Psb%7D%7B1%20+%20%5Cleft(%20%5Cfrac%7BkQ%5E%7BPsbS%7D%7D%7BHL%7D%20%5Cright)%5E%7Bn_%7BPsbS%7D%7D%7D%20%5C%5C%0Av_%7B10%7D%20&amp;=%20k_%7B10%7D%20%5Ccdot%20Psb%20%5C%5C%0Av_%7BII%7D%20&amp;=%20n_%7BPSII%7D%20%5Ccdot%20%5Csigma%20%5Ccdot%20L%20%5Ccdot%20(1%20-%20%5Ctext%7Bclosed%7D)%20%5C%5C%0Av_%7BI%7D%20&amp;=%20n_%7BPSI%7D%20%5Ccdot%20%5Csigma_%7BI0%7D%20%5Ccdot%20%5Cleft(%20%5Cfrac%7BL%20%5Ccdot%20L_%7B12%7D%7D%7BL%20+%20L_%7B12%7D%7D%20%5Cright)%20%5Ccdot%20(PI_%7Btot%7D%20-%20PI_%7Box%7D)%0A%5Cend%7Baligned%7D%0A"></p>
+<p>We are now ready to simulate the fluorescence response to oscillating light. In the panel below, you can choose the average light intensity and its modulation as well as the frequency. You can, in particular, notice the strong inharmonicity of the response when modulations are large.</p>
+<p>The model (Basic Dream Model - BDM) was inspired by the seminal work of Oliver Ebenhöh and collaborators <span class="citation" data-cites="ebenhoh2011minimal">(Ebenhöh et al. 2011)</span>. A first version was published in <span class="citation" data-cites="fuente2024mathematical">(Fuente et al. 2024)</span> and later improved to include PSI notably in the more recent paper by Yuxi Niu and collaborators <span class="citation" data-cites="niu2025constitutive">(Niu et al. 2025)</span>. It is this version of the model called BDMv2 which is implemented below.</p>
+<pre class="shinylive-python" data-engine="python"><code>#| '!! shinylive warning !!': |
+#|   shinylive does not work in self-contained HTML documents.
+#|   Please set `embed-resources: false` in your metadata.
+#| standalone: true
+#| viewerHeight: 700
+from shiny import App, ui, render, reactive
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.integrate import odeint
+from scipy.optimize import least_squares, root
+import copy
+
+def get_pars():
+   return {
+           "nPSII": 1, "nPSI": 1, "PQtot": 7, "Atot": 1000,
+           "k1p": 250, "k1m": 100, "k2p": 100, "k2m": 10,
+           "k3": 0.01, "k4": 0.001, "k5": 100, "k6": 8,
+           "k7": 500, "k8": 1, "k9": 0.05, "k10": 0.004,
+           "FQmaxPsbS": 0.3, "FQmaxZea": 0.3,
+           "nPsbS": 4, "nZea": 6,
+           "bH": 0.01,
+           "NA": 6.022e17,
+           "volLum": 2.66e-21,
+           "volStr": 2.09e-20,
+           "a": 9.02e-2,
+           "Hstroma": 10**(-7.8)/10**(-6),
+           "kQPsbS": 10**(-6)/10**(-6),
+           "kQZea": 10**(-6)/10**(-6),
+           "sigma_I0": 1,
+           "sigma_II0": 1,
+           "L12": 10000,
+           "PItot": 1,
+           "stim": {"L0": 100, "L1": 50, "T": 10},
+           "Phimax": .8
+       }
+
+def get_L(t, p_stim):
+    return p_stim["L0"] + p_stim["L1"]*np.sin(2*np.pi*t/p_stim["T"]);
+
+def eqns_SS(x, p):
+    PQ, PIox, Zea, Psb, HL, ATP = x
+    L0 = p["stim"]["L0"]
+    # sigma and closed fraction
+    sigma = p["sigma_II0"]*(1 - p["FQmaxPsbS"]*Psb)*(1 - p["FQmaxZea"]*Zea)
+    closed = 1 / (1 + p["k1p"]*PQ/(sigma*L0 + p["k1m"]*(p["PQtot"]-PQ)))
+
+    # fluxes
+    v1  = p["k1p"]*closed*PQ - p["k1m"]*(1-closed)*(p["PQtot"]-PQ)
+    v2  = p["k2p"]*(p["PQtot"]-PQ)*PIox - p["k2m"]*PQ*(p["PItot"]-PIox)
+    v3  = p["k3"]*(1 - Zea)/(1 + (p["kQZea"]/HL)**p["nZea"])
+    v4  = p["k4"]*Zea
+    v5  = p["k5"]*((p["Atot"]-ATP) - p["a"]*ATP*(1./HL)**(14./3))
+    v6  = p["k6"]*ATP
+    v7  = p["k7"]*(HL - p["Hstroma"])
+    v8  = p["k8"]*(p["PQtot"]-PQ)
+    v9  = p["k9"]*(1 - Psb)/(1 + (p["kQPsbS"]/HL)**p["nPsbS"])
+    v10 = p["k10"]*Psb
+    vII = p["nPSII"]*sigma*L0*(1 - closed)
+    vI  = p["nPSI"]*p["sigma_I0"]*(L0*p["L12"]/(L0+p["L12"]))*(p["PItot"]-PIox)
+
+    return [
+        v2 - v1 + 2*v8,          
+        vI  - v2,                
+        v3  - v4,                
+        v9  - v10,               
+        p["bH"]*((vII+v2)/(p["NA"]*p["volLum"])
+                 - (14/3)*(p["volStr"]/p["volLum"])*v5
+                 - v7),          
+        v5  - v6                 
+    ]
+
+def eqns(x, t, p):
+    L = get_L(t, p["stim"])
+    PQ,  PIox, Zea, Psb, HL, ATP = x
+
+    sigma = p["sigma_II0"]*(1 - p["FQmaxPsbS"]*Psb)*(1 - p["FQmaxZea"]*Zea)
+    closed = 1 / (1 + p["k1p"]*PQ/(sigma*L + p["k1m"]*(p["PQtot"]-PQ)))
+
+    v1  = p["k1p"]*closed*PQ - p["k1m"]*(1-closed)*(p["PQtot"]-PQ)
+    v2  = p["k2p"]*(p["PQtot"]-PQ)*PIox - p["k2m"]*PQ*(p["PItot"]-PIox)
+    v3  = p["k3"]*(1 - Zea)/(1 + (p["kQZea"]/HL)**p["nZea"])
+    v4  = p["k4"]*Zea
+    v5  = p["k5"]*((p["Atot"]-ATP) - p["a"]*ATP*(1./HL)**(14./3))
+    v6  = p["k6"]*ATP
+    v7  = p["k7"]*(HL - p["Hstroma"])
+    v8  = p["k8"]*(p["PQtot"]-PQ)
+    v9  = p["k9"]*(1 - Psb)/(1 + (p["kQPsbS"]/HL)**p["nPsbS"])
+    v10 = p["k10"]*Psb
+    vII = p["nPSII"]*sigma*L*(1 - closed)
+    vI  = p["nPSI"]*p["sigma_I0"]*(L*p["L12"]/(L+p["L12"]))*(p["PItot"]-PIox)
+
+    return [
+        v2 - v1 + 2*v8,            # PQ balance
+        vI  - v2,                  # PIox balance
+        v3  - v4,                  # Zea dynamics
+        v9  - v10,                 # PsbS dynamics
+        p["bH"]*((vII+v2)/(p["NA"]*p["volLum"])
+                 - (14/3)*(p["volStr"]/p["volLum"])*v5
+                 - v7),           # proton motive force
+        v5  - v6                   # ATP balance
+    ]
+
+def get_ChlF(p, L, sols):
+    sigma = p["sigma_II0"]*(1 - p["FQmaxPsbS"]*sols[:,3])*(1 - p["FQmaxZea"]*sols[:,2])
+    closed = 1 / (1 + p["k1p"]*sols[:,0]/(sigma*L + p["k1m"]*(p["PQtot"]-sols[:,0])))
+    return (1-p["FQmaxZea"]* sols[:,2])*(1-p["FQmaxPsbS"]*sols[:,3])*( (1-closed)/(1+p["Phimax"]*(1-p["FQmaxZea"]* sols[:,2])*(1-p["FQmaxPsbS"]*sols[:,3])/(1-p["Phimax"])+closed))
+
+def get_ChlF_single_val(p, L, x0):
+    sigma = p["sigma_II0"]*(1 - p["FQmaxPsbS"]*x0[3])*(1 - p["FQmaxZea"]*x0[2])
+    closed = 1 / (1 + p["k1p"]*x0[0]/(sigma*L + p["k1m"]*(p["PQtot"]-x0[0])))
+    return (1-p["FQmaxZea"]* x0[2])*(1-p["FQmaxPsbS"]*x0[3])*( (1-closed)/(1+p["Phimax"]*(1-p["FQmaxZea"]* x0[2])*(1-p["FQmaxPsbS"]*x0[3])/(1-p["Phimax"])+closed))
+
+def get_nII(p, L, sols):
+    sigma = p["sigma_II0"]*(1 - p["FQmaxPsbS"]*sols[:,3])*(1 - p["FQmaxZea"]*sols[:,2])
+    closed = 1 / (1 + p["k1p"]*sols[:,0]/(sigma*L + p["k1m"]*(p["PQtot"]-sols[:,0])))
+    return p["nPSII"]*sigma*L*(1 - closed)
+
+def get_nII_single_val(p, L, x0):
+    sigma = p["sigma_II0"]*(1 - p["FQmaxPsbS"]*x0[3])*(1 - p["FQmaxZea"]*x0[2])
+    closed = 1 / (1 + p["k1p"]*x0[0]/(sigma*L + p["k1m"]*(p["PQtot"]-x0[0])))
+    return p["nPSII"]*sigma*L*(1 - closed)
+
+def get_dt(f):
+   if f&gt;1: dt=1/(100*f)
+   else: dt=.01
+   return dt
+
+def get_SS(p):
+   p_ss=copy.deepcopy(p)
+   p_ss["stim"]["L1"] = 0
+   lb = [0,           0,           0,           0,            p["Hstroma"],          0      ]
+   ub = [p["PQtot"],  p["PItot"],  1,           1,            p["Hstroma"]*1000,     p["Atot"]]
+   x0 = [p["PQtot"]/2, p["PItot"]/2,0.5,      0.5,            p["Hstroma"]*10,       p["Atot"]/2]   
+
+   #ss = root(eqns_SS, x0, args=(p, ))
+   sols = odeint(eqns, x0, np.linspace(0,10000,100), args=(p_ss,), hmax=1, atol=1e-7, rtol=1e-11, mxstep=5000)
+   #PQ_ss, PIox_ss, Zea_ss, Psb_ss, HL_ss, ATP_ss = ss.x
+   #return ss.x
+   return sols[-1,:]
+
+def one_run(p, NT=100, dt=.01):
+   x0 = get_SS(p)   
+   dt = get_dt(1./p["stim"]["T"])
+   tf=NT*p["stim"]["T"]
+   N=int(tf/dt)
+   ts=np.linspace(0,tf,N)
+
+   sols = odeint(eqns, x0, ts, args=(p,), hmax=0.0001, atol=1e-7, rtol=1e-11, mxstep=5000)
+   L = get_L(ts, p["stim"])
+   return ts, L, sols, x0
+
+app_ui = ui.page_sidebar(
+    ui.sidebar(
+        ui.input_slider("u0", "Light DC", 10, 1000, 100, step=10),
+        ui.input_slider("u1", "Light modulation amplitude", 0, 1000, 50, step=10),
+        ui.input_numeric("frequency", "Frequency (Hz)", 1),
+        ui.input_action_button("run", "Run Simulation"),
+        open="open",
+    ),
+    ui.card(
+        ui.output_plot("plot")
+    ),
+    #ui.card(
+    #    ui.output_text_verbatim("summary")
+    #),
+    ui.card(
+        ui.output_text_verbatim("summary")
+    ),
+    title="Basic Dream Model V2",
+)
+
+def server(input, output, session):
+
+    @reactive.event(input.run)
+    def simulate():
+        p=get_pars()
+        p["stim"]["T"] = 1./float(input.frequency())
+        p["stim"]["L1"] = float(input.u1())
+        p["stim"]["L0"] = float(input.u0())
+        dt = get_dt(1./p["stim"]["T"])
+        ts, L, sols, x0 = one_run(p, 3, dt)
+        F = get_ChlF(p, L, sols)
+        F0 =get_ChlF_single_val(p, p["stim"]["L0"], x0)
+        
+        return ts, F, F0, x0
+
+    @output
+    @render.plot
+    def plot():
+        ts, F, F0, x0 = simulate()
+        fig, ax = plt.subplots()
+        ax.plot(ts, F, 'k')
+        ax.plot([ts[0], ts[-1]], [F0, F0], 'r')
+        ax.set_xlabel("time [s]"); ax.set_ylabel("Fluorescence [a.u.]")
+        return fig
+
+    @output
+    @render.text
+    def summary():
+        ts, F, F0, x0 = simulate()
+        return f"Mean osc.: {np.mean(F)} | Steady state: {F0}"
+        
+app = App(app_ui, server)</code></pre>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="ref-ebenhoh2011minimal" class="csl-entry">
+Ebenhöh, Oliver, Torsten Houwaart, Heiko Lokstein, Stephanie Schlede, and Katrin Tirok. 2011. <span>“A Minimal Mathematical Model of Nonphotochemical Quenching of Chlorophyll Fluorescence.”</span> <em>Biosystems</em> 103 (2): 196–204.
+</div>
+<div id="ref-fuente2024mathematical" class="csl-entry">
+Fuente, David, Marcelo Orlando, Benjamin Bailleul, Ludovic Jullien, Dušan Lazár, and Ladislav Nedbal. 2024. <span>“A Mathematical Model to Simulate the Dynamics of Photosynthetic Light Reactions Under Harmonically Oscillating Light.”</span> <em>Plant Physiology and Biochemistry</em> 217: 109138.
+</div>
+<div id="ref-niu2025constitutive" class="csl-entry">
+Niu, Yuxi, David Fuente, Shizue Matsubara, Dušan Lazár, and Ladislav Nedbal. 2025. <span>“Constitutive and Regulatory Responses of Arabidopsis Thaliana to Harmonically Oscillating Light.”</span> <em>Physiologia Plantarum</em> 177 (4): e70421.
+</div>
+</div>
+
+
+</section>
+
+ ]]></description>
+  <category>photosynthesis</category>
+  <category>simulation</category>
+  <category>plants</category>
+  <guid>https://kodda.github.io/millieues/posts/2025-10-24-Modelling-photosynthesis-regulation/</guid>
+  <pubDate>Thu, 23 Oct 2025 22:00:00 GMT</pubDate>
+</item>
 <item>
   <title>The sound of photosynthesis</title>
   <dc:creator>David Colliaux</dc:creator>
@@ -117,28 +374,6 @@ Niu, Yuxi, Dušan Lazár, Alfred R Holzwarth, David M Kramer, Shizue Matsubara, 
 
 
 <p>Hey! This is a blog about various scientific topics that I find interesting. I will post here my random thoughts and ideas related to modeling, machine learning and biology.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">as</span> np</span>
-<span id="cb1-2"></span>
-<span id="cb1-3"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">def</span> fact(n):</span>
-<span id="cb1-4">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">return</span> np.prod(<span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">range</span>(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>, n <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1</span>))</span></code></pre></div></div>
 
 
 
