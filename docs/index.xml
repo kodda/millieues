@@ -37,7 +37,7 @@
 <figcaption>Basic Dream Model v2: The dynamics of the components marked in green are described by the system of ODEs below (figure extracted from <span class="citation" data-cites="niu2025constitutive">(Niu et al. 2025)</span></figcaption>
 </figure>
 </div>
-<p>The model is described by the following system of ODEs: [shinylive]<img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Balign*%7D%0A%5Cfrac%7BdPQ%7D%7Bdt%7D%20&amp;=%20v_2%20-%20v_1%20+%202v_8%20%5C%5C%0A%5Cfrac%7BdPI_%7Box%7D%7D%7Bdt%7D%20&amp;=%20v_I%20-%20v_2%20%5C%5C%0A%5Cfrac%7BdZea%7D%7Bdt%7D%20&amp;=%20v_3%20-%20v_4%20%5C%5C%0A%5Cfrac%7BdPsb%7D%7Bdt%7D%20&amp;=%20v_9%20-%20v_%7B10%7D%20%5C%5C%0A%5Cfrac%7BdHL%7D%7Bdt%7D%20&amp;=%20b_H%20%5Ccdot%20%5Cleft%5B%20%5Cfrac%7Bv_%7BII%7D%20+%20v_2%7D%7BN_A%20%5Ccdot%20vol_%7BLum%7D%7D%20-%20%5Cfrac%7B14%7D%7B3%7D%20%5Ccdot%20%5Cleft(%20%5Cfrac%7Bvol_%7BStr%7D%7D%7Bvol_%7BLum%7D%7D%20%5Cright)%20%5Ccdot%20v_5%20-%20v_7%20%5Cright%5D%20%5C%5C%0A%5Cfrac%7BdATP%7D%7Bdt%7D%20&amp;=%20v_5%20-%20v_6%0A%5Cend%7Balign*%7D%0A"></p>
+<p>The model is described by the following system of ODEs: <img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Balign*%7D%0A%5Cfrac%7BdPQ%7D%7Bdt%7D%20&amp;=%20v_2%20-%20v_1%20+%202v_8%20%5C%5C%0A%5Cfrac%7BdPI_%7Box%7D%7D%7Bdt%7D%20&amp;=%20v_I%20-%20v_2%20%5C%5C%0A%5Cfrac%7BdZea%7D%7Bdt%7D%20&amp;=%20v_3%20-%20v_4%20%5C%5C%0A%5Cfrac%7BdPsb%7D%7Bdt%7D%20&amp;=%20v_9%20-%20v_%7B10%7D%20%5C%5C%0A%5Cfrac%7BdHL%7D%7Bdt%7D%20&amp;=%20b_H%20%5Ccdot%20%5Cleft%5B%20%5Cfrac%7Bv_%7BII%7D%20+%20v_2%7D%7BN_A%20%5Ccdot%20vol_%7BLum%7D%7D%20-%20%5Cfrac%7B14%7D%7B3%7D%20%5Ccdot%20%5Cleft(%20%5Cfrac%7Bvol_%7BStr%7D%7D%7Bvol_%7BLum%7D%7D%20%5Cright)%20%5Ccdot%20v_5%20-%20v_7%20%5Cright%5D%20%5C%5C%0A%5Cfrac%7BdATP%7D%7Bdt%7D%20&amp;=%20v_5%20-%20v_6%0A%5Cend%7Balign*%7D%0A"></p>
 <p>with the following reaction rates:</p>
 <p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Baligned%7D%0Av_1%20&amp;=%20k_%7B1p%7D%20%5Ccdot%20%5Ctext%7Bclosed%7D%20%5Ccdot%20PQ%20-%20k_%7B1m%7D%20%5Ccdot%20(1%20-%20%5Ctext%7Bclosed%7D)%20%5Ccdot%20(PQ_%7Btot%7D%20-%20PQ)%20%5C%5C%0Av_2%20&amp;=%20k_%7B2p%7D%20%5Ccdot%20(PQ_%7Btot%7D%20-%20PQ)%20%5Ccdot%20PI_%7Box%7D%20-%20k_%7B2m%7D%20%5Ccdot%20PQ%20%5Ccdot%20(PI_%7Btot%7D%20-%20PI_%7Box%7D)%20%5C%5C%0Av_3%20&amp;=%20k_3%20%5Ccdot%20%5Cfrac%7B1%20-%20Zea%7D%7B1%20+%20%5Cleft(%20%5Cfrac%7BkQ%5E%7BZea%7D%7D%7BHL%7D%20%5Cright)%5E%7Bn_%7BZea%7D%7D%7D%20%5C%5C%0Av_4%20&amp;=%20k_4%20%5Ccdot%20Zea%20%5C%5C%0Av_5%20&amp;=%20k_5%20%5Ccdot%20%5Cleft%5B%20(A_%7Btot%7D%20-%20ATP)%20-%20a%20%5Ccdot%20ATP%20%5Ccdot%20%5Cleft(%20%5Cfrac%7B1%7D%7BHL%7D%20%5Cright)%5E%7B14/3%7D%20%5Cright%5D%20%5C%5C%0Av_6%20&amp;=%20k_6%20%5Ccdot%20ATP%20%5C%5C%0Av_7%20&amp;=%20k_7%20%5Ccdot%20(HL%20-%20H_%7B%5Ctext%7Bstroma%7D%7D)%20%5C%5C%0Av_8%20&amp;=%20k_8%20%5Ccdot%20(PQ_%7Btot%7D%20-%20PQ)%20%5C%5C%0Av_9%20&amp;=%20k_9%20%5Ccdot%20%5Cfrac%7B1%20-%20Psb%7D%7B1%20+%20%5Cleft(%20%5Cfrac%7BkQ%5E%7BPsbS%7D%7D%7BHL%7D%20%5Cright)%5E%7Bn_%7BPsbS%7D%7D%7D%20%5C%5C%0Av_%7B10%7D%20&amp;=%20k_%7B10%7D%20%5Ccdot%20Psb%20%5C%5C%0Av_%7BII%7D%20&amp;=%20n_%7BPSII%7D%20%5Ccdot%20%5Csigma%20%5Ccdot%20L%20%5Ccdot%20(1%20-%20%5Ctext%7Bclosed%7D)%20%5C%5C%0Av_%7BI%7D%20&amp;=%20n_%7BPSI%7D%20%5Ccdot%20%5Csigma_%7BI0%7D%20%5Ccdot%20%5Cleft(%20%5Cfrac%7BL%20%5Ccdot%20L_%7B12%7D%7D%7BL%20+%20L_%7B12%7D%7D%20%5Cright)%20%5Ccdot%20(PI_%7Btot%7D%20-%20PI_%7Box%7D)%0A%5Cend%7Baligned%7D%0A"></p>
 <p>with the effective antenna cross-section <img src="https://latex.codecogs.com/png.latex?%5Csigma"> given by: <img src="https://latex.codecogs.com/png.latex?%0A%5Csigma%20=%20%5Csigma_%7BII0%7D%20%5Ccdot%20(1%20-%20FQmaxPsbS%20%5Ccdot%20Psb)%20%5Ccdot%20(1%20-%20FQmaxZea%20%5Ccdot%20Zea)%0A"> where <img src="https://latex.codecogs.com/png.latex?FQmaxPsbS"> and <img src="https://latex.codecogs.com/png.latex?FQmaxZea"> are the maximum fluorescence quotients for plastocyanin and zeaxanthin, respectively.</p>
@@ -203,7 +203,7 @@ app_ui = ui.page_sidebar(
         ui.input_numeric("frequency", "Frequency (Hz)", 1),
         ui.input_action_button("run", "Run Simulation"),
         open="open",
-    ),[shinylive]
+    ),
     ui.card(
         ui.output_plot("plot")
     ),
@@ -227,7 +227,7 @@ def server(input, output, session):
         dt = get_dt(1./p["stim"]["T"])
         ts, L, sols, x0 = one_run(p, 3, dt)
         F = get_ChlF(p, L, sols)
-        F0 =get_ChlF_s[shinylive]ingle_val(p, p["stim"]["L0"], x0)
+        F0 =get_ChlF_single_val(p, p["stim"]["L0"], x0)
         
         return ts, F, F0, x0
 
