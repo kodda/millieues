@@ -9,7 +9,7 @@
 <meta name="author" content="David Colliaux">
 <meta name="dcterms.date" content="2025-10-24">
 
-<title>Modelling photosynthesis regulation – Mil lieues</title>
+<title>Basic Dream Model – Mil lieues</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -330,7 +330,7 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Modelling photosynthesis regulation</h1>
+      <h1 class="title">Basic Dream Model</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">photosynthesis</div>
                 <div class="quarto-category">simulation</div>
@@ -387,7 +387,7 @@ window.Quarto = {
 <figcaption>Basic Dream Model v2: The dynamics of the components marked in green are described by the system of ODEs below (figure extracted from <span class="citation" data-cites="niu2025constitutive">(<a href="#ref-niu2025constitutive" role="doc-biblioref">Niu et al. 2025</a>)</span></figcaption>
 </figure>
 </div>
-<p>The model is described by the following system of ODEs: <span class="math display">\[
+<p>The model is described by the following system of ODEs: [shinylive]<span class="math display">\[
 \begin{align*}
 \frac{dPQ}{dt} &amp;= v_2 - v_1 + 2v_8 \\
 \frac{dPI_{ox}}{dt} &amp;= v_I - v_2 \\
@@ -397,7 +397,8 @@ window.Quarto = {
 \frac{dATP}{dt} &amp;= v_5 - v_6
 \end{align*}
 \]</span></p>
-<p>with the following reaction rates: <span class="math display">\[
+<p>with the following reaction rates:</p>
+<p><span class="math display">\[
 \begin{aligned}
 v_1 &amp;= k_{1p} \cdot \text{closed} \cdot PQ - k_{1m} \cdot (1 - \text{closed}) \cdot (PQ_{tot} - PQ) \\
 v_2 &amp;= k_{2p} \cdot (PQ_{tot} - PQ) \cdot PI_{ox} - k_{2m} \cdot PQ \cdot (PI_{tot} - PI_{ox}) \\
@@ -413,8 +414,15 @@ v_{II} &amp;= n_{PSII} \cdot \sigma \cdot L \cdot (1 - \text{closed}) \\
 v_{I} &amp;= n_{PSI} \cdot \sigma_{I0} \cdot \left( \frac{L \cdot L_{12}}{L + L_{12}} \right) \cdot (PI_{tot} - PI_{ox})
 \end{aligned}
 \]</span></p>
+<p>with the effective antenna cross-section <span class="math inline">\(\sigma\)</span> given by: <span class="math display">\[
+\sigma = \sigma_{II0} \cdot (1 - FQmaxPsbS \cdot Psb) \cdot (1 - FQmaxZea \cdot Zea)
+\]</span> where <span class="math inline">\(FQmaxPsbS\)</span> and <span class="math inline">\(FQmaxZea\)</span> are the maximum fluorescence quotients for plastocyanin and zeaxanthin, respectively.</p>
+<p>and the closed fraction <span class="math inline">\(\text{closed}\)</span> is given by: <span class="math display">\[
+\text{closed} = \frac{1}{1 + k_{1p} \cdot PQ / (\sigma \cdot L + k_{1m} \cdot (PQ_{tot} - PQ))}
+\]</span></p>
 <p>We are now ready to simulate the fluorescence response to oscillating light. In the panel below, you can choose the average light intensity and its modulation as well as the frequency. You can, in particular, notice the strong inharmonicity of the response when modulations are large.</p>
 <p>The model (Basic Dream Model - BDM) was inspired by the seminal work of Oliver Ebenhöh and collaborators <span class="citation" data-cites="ebenhoh2011minimal">(<a href="#ref-ebenhoh2011minimal" role="doc-biblioref">Ebenhöh et al. 2011</a>)</span>. A first version was published in <span class="citation" data-cites="fuente2024mathematical">(<a href="#ref-fuente2024mathematical" role="doc-biblioref">Fuente et al. 2024</a>)</span> and later improved to include PSI notably in the more recent paper by Yuxi Niu and collaborators <span class="citation" data-cites="niu2025constitutive">(<a href="#ref-niu2025constitutive" role="doc-biblioref">Niu et al. 2025</a>)</span>. It is this version of the model called BDMv2 which is implemented below.</p>
+<p>The black line shows the chlorophyll fluorescence in response to oscillatory light and the red line shows the steady state fluorescence in response to constant light where the average intensity is the same in both cases (oscillatory or constant).</p>
 <pre class="shinylive-python" data-engine="python"><code>#| '!! shinylive warning !!': |
 #|   shinylive does not work in self-contained HTML documents.
 #|   Please set `embed-resources: false` in your metadata.
@@ -573,7 +581,7 @@ app_ui = ui.page_sidebar(
         ui.input_numeric("frequency", "Frequency (Hz)", 1),
         ui.input_action_button("run", "Run Simulation"),
         open="open",
-    ),
+    ),[shinylive]
     ui.card(
         ui.output_plot("plot")
     ),
@@ -597,7 +605,7 @@ def server(input, output, session):
         dt = get_dt(1./p["stim"]["T"])
         ts, L, sols, x0 = one_run(p, 3, dt)
         F = get_ChlF(p, L, sols)
-        F0 =get_ChlF_single_val(p, p["stim"]["L0"], x0)
+        F0 =get_ChlF_s[shinylive]ingle_val(p, p["stim"]["L0"], x0)
         
         return ts, F, F0, x0
 

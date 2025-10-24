@@ -369,8 +369,8 @@ window.Quarto = {
 
 <section id="the-photosynthetic-electron-transport-chain" class="level2">
 <h2 class="anchored" data-anchor-id="the-photosynthetic-electron-transport-chain">The photosynthetic electron transport chain</h2>
-<p>Plants are converting CO<span class="math inline">\(_2\)</span> into O<span class="math inline">\(_2\)</span> and glucose via light energy through photosynthesis. This process is decomposed into : first the light reaction converting light energy into chemical energy (ATP), then the dark reaction responsible for the assimilation of CO<span class="math inline">\(_2\)</span> into glucose. We talk here about the first part which consist in a cascade of oxydo-reduction reaction called the photosynthetic electron transport chain (PETC).</p>
-<p>Photons hitting the antennas attached to the membrane of the chloroplasts are absorbed and create a flow of electrons through the chain but a small portion of the energy is re-emitted through the chlorophyll fluorescence. It is possible to measure this fluorescence in response to light stimulation to probe the PETC and actually several locations in the PETC can be probed through this technique: the reactions centers (P700) and the various redox pools (plastocyanine PC, or ferredoxin Fd) visible on the figure below.</p>
+<p>Plants are converting H<span class="math inline">\(_2\)</span>O and CO<span class="math inline">\(_2\)</span> into O<span class="math inline">\(_2\)</span> and glucose, respectively, via light energy through photosynthesis. This process is decomposed into: first the light-dependent reactions converting light energy into chemical energy (ATP) and reservoir of reducing power (NADPH), then the dark reaction responsible for the assimilation of CO<span class="math inline">\(_2\)</span> into glucose. We talk here about the first part which consists in a cascade of redox reaction in the photosynthetic electron transport chain (PETC).</p>
+<p>Photons hitting the antennas attached to the membrane of the chloroplasts are absorbed and create a flow of electrons through the PETC but a small portion of the energy is re-emitted through the chlorophyll fluorescence. It is possible to measure this fluorescence in response to light stimulation to probe especially the function of the Photosystem II (see figure below).The other components of PETC can be probed by measurement of the transmittance at certain wavelengths: the reactions centers of Photosystem I (P700) and the various redox pools (plastocyanine PC, or ferredoxin Fd) visible on the figure below.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="./petc.png" class="img-fluid figure-img"></p>
@@ -387,7 +387,7 @@ window.Quarto = {
 <figcaption>Slide extracted from Ladislav’s talk at the DREAM workshop 2025</figcaption>
 </figure>
 </div>
-<p>This sounded interesting to me so I decided to listen to the timber of the PETC through sonification of the various signals recorded in the study of Yuxi Niu and al. <span class="citation" data-cites="niu2023plants">(<a href="#ref-niu2023plants" role="doc-biblioref">Niu et al. 2023</a>)</span> on Arabidopsis thaliana plants exposed to fluctuating light.</p>
+<p>This sounded interesting to me so I decided to listen to the timber of the PETC through sonification of the various signals recorded in the study of Yuxi Niu and al. <span class="citation" data-cites="niu2023plants">(<a href="#ref-niu2023plants" role="doc-biblioref">Niu et al. 2023</a>)</span> on Arabidopsis thaliana plants exposed to oscillating light.</p>
 <p>For each of the observables (Light, Chlorohyll Fluorescence, PC, Fd and P700), I collected the cleaned waveform where only the first 4 harmonics were kept at various frequencies. I then rescaled the timeseries to a 440Hz signal and added a Hanning window to give a simple dynamics envelope.</p>
 <p>You can hear the result below. Except for the Light signal which is always a pure sine wave, the timber is quite different depending on the frequency…That’s how photosynthesis sounds!</p>
 <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
@@ -432,7 +432,8 @@ Your browser does not support the video tag. </video>
 </p>
 </div>
 </div>
-<p><em>The sound of photosynthesis at different frequencies</em></p>
+<p><em>The sound of photosynthesis at different frequencies</em> The curves are parametrized by the phase of the light excitation: <span class="math display">\[R(\theta) = R_0+A(\theta)\]</span> where <span class="math inline">\(A()\theta)\)</span> is the waveform of the enveloppe.</p>
+<p>I received useful comments from collaborators of the DREAM workshop 2025, in particular from Ladislav Nedbal, Dusan LAzar and Benjamin Bailleul. Thanks to them for their feedback.</p>
 <section id="references" class="level2">
 <h2 class="anchored" data-anchor-id="references">References</h2>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
