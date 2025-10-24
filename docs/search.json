@@ -7,20 +7,6 @@
     "text": "Modelling photosynthesis regulation\n\n\n\nphotosynthesis\n\nsimulation\n\nplants\n\n\n\n\n\n\n\n\n\nOct 24, 2025\n\n\nDavid Colliaux\n\n\n\n\n\n\n\n\n\n\n\n\nThe sound of photosynthesis\n\n\n\nphotosynthesis\n\nsonification\n\nplants\n\n\n\n\n\n\n\n\n\nOct 17, 2025\n\n\nDavid Colliaux\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome to Mil Lieues\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nOct 16, 2025\n\n\nDavid Colliaux\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "posts/2025-10-24-Basic Dream-Model-V2/index.html",
-    "href": "posts/2025-10-24-Basic Dream-Model-V2/index.html",
-    "title": "Simulating the Basic Dream Model V2",
-    "section": "",
-    "text": "We saw about the fluroescence response of plants to oscillating light stimulation in a previous post. I want here to present a model for these responses based on a system of Ordinary Differential Equations (ODEs). In the model, we consider the following components:\nThe model is described by the following system of ODEs: \\[\n\\begin{align*}\n\\frac{dPQ}{dt} &= v_2 - v_1 + 2v_8 \\\\\n\\frac{dPI_{ox}}{dt} &= v_I - v_2 \\\\\n\\frac{dZea}{dt} &= v_3 - v_4 \\\\\n\\frac{dPsb}{dt} &= v_9 - v_{10} \\\\\n\\frac{dHL}{dt} &= b_H \\cdot \\left[ \\frac{v_{II} + v_2}{N_A \\cdot vol_{Lum}} - \\frac{14}{3} \\cdot \\left( \\frac{vol_{Str}}{vol_{Lum}} \\right) \\cdot v_5 - v_7 \\right] \\\\\n\\frac{dATP}{dt} &= v_5 - v_6\n\\end{align*}\n\\]\nwith the following reaction rates: \\[\n\\begin{aligned}\nv_1 &= k_{1p} \\cdot \\text{closed} \\cdot PQ - k_{1m} \\cdot (1 - \\text{closed}) \\cdot (PQ_{tot} - PQ) \\\\\nv_2 &= k_{2p} \\cdot (PQ_{tot} - PQ) \\cdot PI_{ox} - k_{2m} \\cdot PQ \\cdot (PI_{tot} - PI_{ox}) \\\\\nv_3 &= k_3 \\cdot \\frac{1 - Zea}{1 + \\left( \\frac{kQ^{Zea}}{HL} \\right)^{n_{Zea}}} \\\\\nv_4 &= k_4 \\cdot Zea \\\\\nv_5 &= k_5 \\cdot \\left[ (A_{tot} - ATP) - a \\cdot ATP \\cdot \\left( \\frac{1}{HL} \\right)^{14/3} \\right] \\\\\nv_6 &= k_6 \\cdot ATP \\\\\nv_7 &= k_7 \\cdot (HL - H_{\\text{stroma}}) \\\\\nv_8 &= k_8 \\cdot (PQ_{tot} - PQ) \\\\\nv_9 &= k_9 \\cdot \\frac{1 - Psb}{1 + \\left( \\frac{kQ^{PsbS}}{HL} \\right)^{n_{PsbS}}} \\\\\nv_{10} &= k_{10} \\cdot Psb \\\\\nv_{II} &= n_{PSII} \\cdot \\sigma \\cdot L \\cdot (1 - \\text{closed}) \\\\\nv_{I} &= n_{PSI} \\cdot \\sigma_{I0} \\cdot \\left( \\frac{L \\cdot L_{12}}{L + L_{12}} \\right) \\cdot (PI_{tot} - PI_{ox})\n\\end{aligned}\n\\]\nWe are now ready to simulate the fluorescence response to oscillating light. In the panel below, you can choose the average light intensity and its modulation as well as the frequency. You can in particular notice the strong inharmonicity of the response when modulations are large.\nThe model we used here is (Basic Dream Model - BDM) was inspired by the seminal work of Oliver Ebenhöh and collaborators (Ebenhöh et al. 2011). A first version was published in (Fuente et al. 2024) and later improved to include PSI notably in the more recent paper by Yuxi Niu and collaborators (Niu et al. 2025). It is this version of the model calledBDMv2 which is implemented below."
-  },
-  {
-    "objectID": "posts/2025-10-16-welcome/index.html",
-    "href": "posts/2025-10-16-welcome/index.html",
-    "title": "Welcome to Mil Lieues",
-    "section": "",
-    "text": "Hey! This is a blog about various scientific topics that I find interesting. I will post here my random thoughts and ideas related to modeling, machine learning and biology."
-  },
-  {
     "objectID": "posts/2025-10-17-The-sound-of-photosynthesis/index.html",
     "href": "posts/2025-10-17-The-sound-of-photosynthesis/index.html",
     "title": "The sound of photosynthesis",
@@ -49,18 +35,11 @@
     "text": "References\n\n\nNiu, Yuxi, Dušan Lazár, Alfred R Holzwarth, David M Kramer, Shizue Matsubara, Fabio Fiorani, Hendrik Poorter, Silvia D Schrey, and Ladislav Nedbal. 2023. “Plants Cope with Fluctuating Light by Frequency-Dependent Nonphotochemical Quenching and Cyclic Electron Transport.” New Phytologist 239 (5): 1869–86."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "posts/2025-10-16-welcome/index.html",
+    "href": "posts/2025-10-16-welcome/index.html",
+    "title": "Welcome to Mil Lieues",
     "section": "",
-    "text": "Hello, I am David Colliaux researcher at Sony CSL - Paris. This is a blog to post random thoughts (mainly about my research)."
-  },
-  {
-    "objectID": "posts/2025-10-24-Basic Dream-Model-V2/index.html#references",
-    "href": "posts/2025-10-24-Basic Dream-Model-V2/index.html#references",
-    "title": "Simulating the Basic Dream Model V2",
-    "section": "References",
-    "text": "References\n\n\nEbenhöh, Oliver, Torsten Houwaart, Heiko Lokstein, Stephanie Schlede, and Katrin Tirok. 2011. “A Minimal Mathematical Model of Nonphotochemical Quenching of Chlorophyll Fluorescence.” Biosystems 103 (2): 196–204.\n\n\nFuente, David, Marcelo Orlando, Benjamin Bailleul, Ludovic Jullien, Dušan Lazár, and Ladislav Nedbal. 2024. “A Mathematical Model to Simulate the Dynamics of Photosynthetic Light Reactions Under Harmonically Oscillating Light.” Plant Physiology and Biochemistry 217: 109138.\n\n\nNiu, Yuxi, David Fuente, Shizue Matsubara, Dušan Lazár, and Ladislav Nedbal. 2025. “Constitutive and Regulatory Responses of Arabidopsis Thaliana to Harmonically Oscillating Light.” Physiologia Plantarum 177 (4): e70421."
+    "text": "Hey! This is a blog about various scientific topics that I find interesting. I will post here my random thoughts and ideas related to modeling, machine learning and biology."
   },
   {
     "objectID": "posts/2025-10-24-Modelling-photosynthesis-regulation/index.html",
@@ -75,5 +54,12 @@
     "title": "Modelling photosynthesis regulation",
     "section": "References",
     "text": "References\n\n\nEbenhöh, Oliver, Torsten Houwaart, Heiko Lokstein, Stephanie Schlede, and Katrin Tirok. 2011. “A Minimal Mathematical Model of Nonphotochemical Quenching of Chlorophyll Fluorescence.” Biosystems 103 (2): 196–204.\n\n\nFuente, David, Marcelo Orlando, Benjamin Bailleul, Ludovic Jullien, Dušan Lazár, and Ladislav Nedbal. 2024. “A Mathematical Model to Simulate the Dynamics of Photosynthetic Light Reactions Under Harmonically Oscillating Light.” Plant Physiology and Biochemistry 217: 109138.\n\n\nNiu, Yuxi, David Fuente, Shizue Matsubara, Dušan Lazár, and Ladislav Nedbal. 2025. “Constitutive and Regulatory Responses of Arabidopsis Thaliana to Harmonically Oscillating Light.” Physiologia Plantarum 177 (4): e70421."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Hello, I am David Colliaux researcher at Sony CSL - Paris. This is a blog to post random thoughts (mainly about my research)."
   }
 ]
