@@ -10,11 +10,63 @@
 <atom:link href="https://kodda.github.io/millieues/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.25</generator>
-<lastBuildDate>Thu, 23 Oct 2025 22:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 29 Oct 2025 23:00:00 GMT</lastBuildDate>
 <item>
-  <title>Basic Dream Model</title>
+  <title>Existential machines</title>
   <dc:creator>David Colliaux</dc:creator>
-  <link>https://kodda.github.io/millieues/posts/2025-10-24-Basic-Dream-Model/</link>
+  <link>https://kodda.github.io/millieues/posts/2025-10-30-Existential-machines/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+<p>We had the great pleasure, in <a href="https://ai-phi.github.io/">AIPHI</a>, to have Dominique Lestel present us his work in a talk entitled <em>Steps to an Ethology of Insurrectionary Machines</em>. He wrote a book, published in 2021, based on his experience as a field philosopher exploring robotics labs, like the one of Gentiane Venture in the University of Tokyo. The book is entitled <em>Insurrectionary Machines - A post-biological theory of the living</em> and contains a comics by Kilofer all along the text.</p>
+<div style="text-align: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://kodda.github.io/millieues/posts/2025-10-30-Existential-machines/machines_insurectionnelles.webp" class="img-fluid figure-img" style="width:30.0%"></p>
+<figcaption>Insurrectionary Machines by Dominique Lestel</figcaption>
+</figure>
+</div>
+</div>
+<p>He argues that the advent of AI and especially humanoid robots should have us rethink who we are as humans and what we mean by living agents. Taking the example of Sophia who gained citizenship in Saudi Arabia, those machines are filling unclear needs and have multiple effects that must be revealed:</p>
+<ul>
+<li>First, today’s humanoid robots are <strong>messianic machines</strong> that are convincing that we need them and they could replace us, humans, in the future.</li>
+<li>Then, these are <strong>metaphysical machines</strong> forcing us to ask fundamental questions like what is the boundary of the living.</li>
+<li>Humanoid robot are also <strong>conjuring machines</strong> in that they are far from the impersonal AGI controlling the world predicted to come in few years by the partisans of the singularity.</li>
+<li>These <strong>machines destroy the nature of language</strong> by expressing opinions out of any frame of reference. Any speech utterance can then be doubted when it is so easy to speak from nowhere.</li>
+<li>It also <strong>disrupts the identification of what is human</strong>. Our morality and the meaning we attribute to the world will be affected when we can’t decide if we are facing a human or just something which appear to be human.</li>
+<li>They are a mark of our entry into <strong>existential capitalism</strong>. Those machine are being there for consolating us of being <em>only</em> humans. There is a market dedicated to these artificial companions.</li>
+</ul>
+<p>We don’t actually need much to care about existential artifacts, like it can be the case for dolls, puppets or tamagochis. Redefining living agents according to how it feels to live with them, to form hybrid communities with them is refreshing. It is striking that the question of the distinction between the human and the non-human was traditionally asked when humans were supposed to be superior to their counterparts (animals) and that in front of today’s machines, this superiority is not so granted anymore. Hybrid communities are also nice to be considered in the context of the extension of intelligence to non-humans in nature like plants, microbes and rivers. Agency circulating between those agents together with humans and machines will be an interesting step to dance.</p>
+<div style="text-align: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://kodda.github.io/millieues/posts/2025-10-30-Existential-machines/drawing_Edmund_Ronald.jpg" class="img-fluid figure-img" style="width:30.0%"></p>
+<figcaption>Dominique Lestel drawn by Edmund Ronald during the AIPHI seminar</figcaption>
+</figure>
+</div>
+</div>
+<p>You’ll find below the recording of the session, unfortunately truncated by 10 or 15 minutes due to a technical problem.</p>
+<audio controls="">
+<source src="AIPHI_Dominique_LESTEL_cut.mp3" type="audio/mpeg">
+<p>Your browser does not support the audio element. </p>
+
+
+
+</audio> ]]></description>
+  <category>philosophy</category>
+  <category>robots</category>
+  <category>ai</category>
+  <guid>https://kodda.github.io/millieues/posts/2025-10-30-Existential-machines/</guid>
+  <pubDate>Wed, 29 Oct 2025 23:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Basic Dream Model - Modeling photosynthetic regulation</title>
+  <dc:creator>David Colliaux</dc:creator>
+  <link>https://kodda.github.io/millieues/posts/2025-10-24-Basic-Dream-Model-Modeling-photosynthetic-regulation/</link>
   <description><![CDATA[ 
 
 
@@ -33,7 +85,7 @@
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://kodda.github.io/millieues/posts/2025-10-24-Basic-Dream-Model/BDMv2.png" class="img-fluid figure-img"></p>
+<p><img src="https://kodda.github.io/millieues/posts/2025-10-24-Basic-Dream-Model-Modeling-photosynthetic-regulation/BDMv2.png" class="img-fluid figure-img"></p>
 <figcaption>Basic Dream Model v2: The dynamics of the components marked in green are described by the system of ODEs below (figure extracted from <span class="citation" data-cites="niu2025constitutive">(Niu et al. 2025)</span></figcaption>
 </figure>
 </div>
@@ -269,7 +321,7 @@ Niu, Yuxi, David Fuente, Shizue Matsubara, Dušan Lazár, and Ladislav Nedbal. 2
   <category>photosynthesis</category>
   <category>simulation</category>
   <category>plants</category>
-  <guid>https://kodda.github.io/millieues/posts/2025-10-24-Basic-Dream-Model/</guid>
+  <guid>https://kodda.github.io/millieues/posts/2025-10-24-Basic-Dream-Model-Modeling-photosynthetic-regulation/</guid>
   <pubDate>Thu, 23 Oct 2025 22:00:00 GMT</pubDate>
 </item>
 <item>
