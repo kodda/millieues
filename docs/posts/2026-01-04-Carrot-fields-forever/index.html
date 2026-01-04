@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="David Colliaux">
+<meta name="dcterms.date" content="2026-01-04">
 
-<title>Mil lieues - a blog about computation and biology – Mil lieues</title>
+<title>Carrot fields forever – Mil lieues</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,33 +22,50 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5a765417e251b733318e9d89b6f3f91b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-e619251c71aa192f7c88d9c41e33b522.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-5a765417e251b733318e9d89b6f3f91b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-5a765417e251b733318e9d89b6f3f91b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-e619251c71aa192f7c88d9c41e33b522.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-5a765417e251b733318e9d89b6f3f91b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,70 +93,12 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
-<link rel="alternate" type="application/rss+xml" title="Mil lieues" href="index.xml" data-external="1"></head>
+</head>
 
-<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -306,9 +267,9 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Mil lieues</span>
     </a>
   </div>
@@ -319,7 +280,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -333,209 +294,100 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Mil lieues - a blog about computation and biology</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">Carrot fields forever</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">plant biology</div>
+                <div class="quarto-category">L-system</div>
+                <div class="quarto-category">3D</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>David Colliaux </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 4, 2026</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="M0Q=">3D <span class="quarto-category-count">(1)</span></div><div class="category" data-category="YWk=">ai <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TC1zeXN0ZW0=">L-system <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bmV3cw==">news <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cGhpbG9zb3BoeQ==">philosophy <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cGhvdG9zeW50aGVzaXM=">photosynthesis <span class="quarto-category-count">(2)</span></div><div class="category" data-category="cGxhbnQlMjBiaW9sb2d5">plant biology <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cGxhbnRz">plants <span class="quarto-category-count">(2)</span></div><div class="category" data-category="cm9ib3Rz">robots <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c2ltdWxhdGlvbg==">simulation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c29uaWZpY2F0aW9u">sonification <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
 
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="cGxhbnQlMjBiaW9sb2d5JTJDTC1zeXN0ZW0lMkMzRA==" data-listing-date-sort="1767481200000" data-listing-file-modified-sort="1767515592946" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="243">
-<div class="thumbnail"><a href="./posts/2026-01-04-Carrot-fields-forever/index.html" class="no-external">
-
-<p class="card-img-top"><img src="posts/2026-01-04-Carrot-fields-forever/Lpy.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2026-01-04-Carrot-fields-forever/index.html" class="no-external">Carrot fields forever</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('cGxhbnQlMjBiaW9sb2d5'); return false;">plant biology</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('TC1zeXN0ZW0='); return false;">L-system</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('M0Q='); return false;">3D</div>
-
+<p>Carrots are quite tough to harvest by hand but there is a way to to do it without hurting your back or getting your hands dirty. Grow it virtually!</p>
+<p>For modelling plants, there are L-system frameworks like <a href="https://github.com/openalea/lpy">L-py</a><span class="citation" data-cites="boudon2012py">[@boudon2012py]</span> which is a dialect of Python enabling the definition of L-systems and their simulation.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Lpy.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>Lpy interface.</figcaption>
+</figure>
 </div>
-<div class="delink listing-description"><a href="./posts/2026-01-04-Carrot-fields-forever/index.html" class="no-external">
-Carrots are quite tough to harvest by hand but there is a way to to do it without hurting your back or getting your hands dirty. Grow it virtually!
-</a></div>
+<p>The first step is to observe a carrot plant and understand its structure. It is important to extract the rules along branching. For example, we can check the images below extracted from an old manuscript and see that each leaf from the root unfolds in a plane. Sub-leaves grow in pairs with opposite angles at level 1 and alternate on each side at the following levels of recursion. We need to translate these rules into an L-system and produce a single leaf.</p>
+<div class="columns">
+<div class="column" style="width:47%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Carrot.jpg" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>Carrot plant, Juliana Anicia Codex, 515 AD, Public Domain, via Wikimedia Commons.</figcaption>
+</figure>
 </div>
-<div class="metadata">
-<a href="./posts/2026-01-04-Carrot-fields-forever/index.html" class="no-external">
-<div class="listing-date">
-Jan 4, 2026
-</div>
-<div class="listing-author">
-David Colliaux
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="cGhpbG9zb3BoeSUyQ3JvYm90cyUyQ2Fp" data-listing-date-sort="1761778800000" data-listing-file-modified-sort="1761843139925" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="436">
-<div class="thumbnail"><a href="./posts/2025-10-30-Existential-machines/index.html" class="no-external">
-
-<p class="card-img-top"><img src="posts/2025-10-30-Existential-machines/machines_insurectionnelles.webp"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2025-10-30-Existential-machines/index.html" class="no-external">Existential machines</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('cGhpbG9zb3BoeQ=='); return false;">philosophy</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('cm9ib3Rz'); return false;">robots</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWk='); return false;">ai</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/2025-10-30-Existential-machines/index.html" class="no-external">
-We had the great pleasure, at AIPHI, of hosting <strong>Dominique Lestel</strong>, who presented his work in a talk entitled <em>Steps to an Ethology of Insurrectionary Machines</em>. His…<em></em>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/2025-10-30-Existential-machines/index.html" class="no-external">
-<div class="listing-date">
-Oct 30, 2025
-</div>
-<div class="listing-author">
-David Colliaux
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="cGhvdG9zeW50aGVzaXMlMkNzaW11bGF0aW9uJTJDcGxhbnRz" data-listing-date-sort="1761256800000" data-listing-file-modified-sort="1761834409048" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2268">
-<div class="thumbnail"><a href="./posts/2025-10-24-Basic-Dream-Model-Modeling-photosynthetic-regulation/index.html" class="no-external">
-
-<p class="card-img-top"><img src="posts/2025-10-24-Basic-Dream-Model-Modeling-photosynthetic-regulation/BDMv2.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2025-10-24-Basic-Dream-Model-Modeling-photosynthetic-regulation/index.html" class="no-external">Basic Dream Model - Modeling photosynthetic regulation</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('cGhvdG9zeW50aGVzaXM='); return false;">photosynthesis</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('c2ltdWxhdGlvbg=='); return false;">simulation</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('cGxhbnRz'); return false;">plants</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/2025-10-24-Basic-Dream-Model-Modeling-photosynthetic-regulation/index.html" class="no-external">
-We saw about the fluorescence response of plants to oscillating light stimulation in a previous post. I want here to present a model for these responses based on a system of…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/2025-10-24-Basic-Dream-Model-Modeling-photosynthetic-regulation/index.html" class="no-external">
-<div class="listing-date">
-Oct 24, 2025
-</div>
-<div class="listing-author">
-David Colliaux
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="cGhvdG9zeW50aGVzaXMlMkNzb25pZmljYXRpb24lMkNwbGFudHM=" data-listing-date-sort="1760652000000" data-listing-file-modified-sort="1761318833291" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="614">
-<div class="thumbnail"><a href="./posts/2025-10-17-The-sound-of-photosynthesis/index.html" class="no-external">
-
-<p class="card-img-top"><img src="posts/2025-10-17-The-sound-of-photosynthesis/petc.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2025-10-17-The-sound-of-photosynthesis/index.html" class="no-external">The sound of photosynthesis</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('cGhvdG9zeW50aGVzaXM='); return false;">photosynthesis</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('c29uaWZpY2F0aW9u'); return false;">sonification</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('cGxhbnRz'); return false;">plants</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/2025-10-17-The-sound-of-photosynthesis/index.html" class="no-external">
-Plants are converting H<span class="math inline">\(_2\)</span>O and CO<span class="math inline">\(_2\)</span> into O<span class="math inline">\(_2\)</span> and glucose, respectively, via light energy through photosynthesis. This process is decomposed into: first the…<span class="math inline"></span>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/2025-10-17-The-sound-of-photosynthesis/index.html" class="no-external">
-<div class="listing-date">
-Oct 17, 2025
-</div>
-<div class="listing-author">
-David Colliaux
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="bmV3cw==" data-listing-date-sort="1760565600000" data-listing-file-modified-sort="1761207303050" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="29">
-<div class="thumbnail"><a href="./posts/2025-10-16-welcome/index.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2025-10-16-welcome/index.html" class="no-external">Welcome to Mil Lieues</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">news</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/2025-10-16-welcome/index.html" class="no-external">
-Hey! This is a blog about various scientific topics that I find interesting. I will post here my random thoughts and ideas related to modeling, machine learning and biology.
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/2025-10-16-welcome/index.html" class="no-external">
-<div class="listing-date">
-Oct 16, 2025
-</div>
-<div class="listing-author">
-David Colliaux
-</div>
-</a>
+</div><div class="column" style="width:53%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="one_leaf.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>Simplified leaf structure highlighting paired sub-leaves.</figcaption>
+</figure>
 </div>
 </div>
 </div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+<p>Then, in order to produce more realistic plants, we add a stochastic component to the rules. For example, we can add a small random angle to the sub-leaves at each level of recursion. We also include an upward tropism so that the leaves have curvature. Here is an instance of the simulated plant.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="carrot_sto.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>Stochastic carrot plant.</figcaption>
+</figure>
+</div>
+<p>Finally, we can produce a field of carrots by generating a new random instance for each plant. Here is a visualization of the simulated field.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="field.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>Simulated carrot field.</figcaption>
+</figure>
+</div>
+<p>The code is available on <a href="https://github.com/SonyCSLParis/CarrotFielsForever">GitHub</a>.</p>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<div id="refs" role="list">
+
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right

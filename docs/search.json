@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Mil lieues - a blog about computation and biology",
     "section": "",
-    "text": "Existential machines\n\n\n\nphilosophy\n\nrobots\n\nai\n\n\n\n\n\n\n\n\n\nOct 30, 2025\n\n\nDavid Colliaux\n\n\n\n\n\n\n\n\n\n\n\n\nBasic Dream Model - Modeling photosynthetic regulation\n\n\n\nphotosynthesis\n\nsimulation\n\nplants\n\n\n\n\n\n\n\n\n\nOct 24, 2025\n\n\nDavid Colliaux\n\n\n\n\n\n\n\n\n\n\n\n\nThe sound of photosynthesis\n\n\n\nphotosynthesis\n\nsonification\n\nplants\n\n\n\n\n\n\n\n\n\nOct 17, 2025\n\n\nDavid Colliaux\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome to Mil Lieues\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nOct 16, 2025\n\n\nDavid Colliaux\n\n\n\n\n\nNo matching items"
+    "text": "Carrot fields forever\n\n\n\nplant biology\n\nL-system\n\n3D\n\n\n\n\n\n\n\n\n\nJan 4, 2026\n\n\nDavid Colliaux\n\n\n\n\n\n\n\n\n\n\n\n\nExistential machines\n\n\n\nphilosophy\n\nrobots\n\nai\n\n\n\n\n\n\n\n\n\nOct 30, 2025\n\n\nDavid Colliaux\n\n\n\n\n\n\n\n\n\n\n\n\nBasic Dream Model - Modeling photosynthetic regulation\n\n\n\nphotosynthesis\n\nsimulation\n\nplants\n\n\n\n\n\n\n\n\n\nOct 24, 2025\n\n\nDavid Colliaux\n\n\n\n\n\n\n\n\n\n\n\n\nThe sound of photosynthesis\n\n\n\nphotosynthesis\n\nsonification\n\nplants\n\n\n\n\n\n\n\n\n\nOct 17, 2025\n\n\nDavid Colliaux\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome to Mil Lieues\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nOct 16, 2025\n\n\nDavid Colliaux\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/2025-10-17-The-sound-of-photosynthesis/index.html",
@@ -35,20 +35,6 @@
     "text": "References\n\n\nNiu, Yuxi, Dušan Lazár, Alfred R Holzwarth, David M Kramer, Shizue Matsubara, Fabio Fiorani, Hendrik Poorter, Silvia D Schrey, and Ladislav Nedbal. 2023. “Plants Cope with Fluctuating Light by Frequency-Dependent Nonphotochemical Quenching and Cyclic Electron Transport.” New Phytologist 239 (5): 1869–86."
   },
   {
-    "objectID": "posts/2025-10-16-welcome/index.html",
-    "href": "posts/2025-10-16-welcome/index.html",
-    "title": "Welcome to Mil Lieues",
-    "section": "",
-    "text": "Hey! This is a blog about various scientific topics that I find interesting. I will post here my random thoughts and ideas related to modeling, machine learning and biology."
-  },
-  {
-    "objectID": "posts/2025-10-30-Existential-machines/index.html",
-    "href": "posts/2025-10-30-Existential-machines/index.html",
-    "title": "Existential machines",
-    "section": "",
-    "text": "We had the great pleasure, at AIPHI, of hosting Dominique Lestel, who presented his work in a talk entitled Steps to an Ethology of Insurrectionary Machines. His presentation was based on his 2021 book, written from his experience as a field philosopher exploring robotics laboratories such as Gentiane Venture’s lab at the University of Tokyo. The book, Insurrectionary Machines – A Post-Biological Theory of the Living, also features a comic strip by Killoffer running throughout the text.\n\n\n\n\nInsurrectionary Machines by Dominique Lestel\n\n\n\nLestel argues that the rise of AI—and particularly humanoid robots—should prompt us to rethink who we are as humans and what we mean by “living agents.” Taking the example of Sophia, the robot that received Saudi Arabian citizenship, he highlights how these machines fulfill ambiguous needs and generate multiple effects that deserve scrutiny:\n\nToday’s humanoid robots are messianic machines, persuading us that we need them and that they could one day replace humans.\nThey are also metaphysical machines, compelling us to ask fundamental questions—such as where the boundaries of the living truly lie.\nHumanoid robots are conjuring machines, far removed from the impersonal AGI expected by proponents of the technological singularity.\nThese machines disrupt the nature of language, producing utterances detached from any clear frame of reference. When it becomes so easy to “speak from nowhere,” every act of speech can be called into question.\nThey destabilize our sense of what is human: our morality and worldview shift when we can no longer tell whether we are interacting with a person or with something merely appearing to be human.\nFinally, they signal our entry into existential capitalism—a market of artificial companions designed to console us for being only human.\n\nWe need little encouragement to care about existential artifacts, as shown by our attachments to dolls, puppets, or tamagotchis. Redefining living agents through the experience of living with them—and forming hybrid communities alongside them—is a refreshing perspective. It is striking that the question of the human–non-human divide was traditionally posed when humans assumed their superiority over animals, whereas today, in the presence of machines, that superiority is far less certain.\nConsidering hybrid communities is also relevant in the broader context of extending intelligence to non-humans in nature—plants, microbes, or even rivers. Observing how agency circulates among these agents, humans, and machines will be a fascinating dance to follow.\n\n\n\n\nDominique Lestel drawn by Edmund Ronald during the AIPHI seminar\n\n\n\nBelow, you’ll find the recording of the session—unfortunately truncated by about 10 to 15 minutes due to a technical issue.\n\n\nYour browser does not support the audio element."
-  },
-  {
     "objectID": "posts/2025-10-24-Basic-Dream-Model-Modeling-photosynthetic-regulation/index.html",
     "href": "posts/2025-10-24-Basic-Dream-Model-Modeling-photosynthetic-regulation/index.html",
     "title": "Basic Dream Model - Modeling photosynthetic regulation",
@@ -61,6 +47,34 @@
     "title": "Basic Dream Model - Modeling photosynthetic regulation",
     "section": "References",
     "text": "References\n\n\nEbenhöh, Oliver, Torsten Houwaart, Heiko Lokstein, Stephanie Schlede, and Katrin Tirok. 2011. “A Minimal Mathematical Model of Nonphotochemical Quenching of Chlorophyll Fluorescence.” Biosystems 103 (2): 196–204.\n\n\nFuente, David, Marcelo Orlando, Benjamin Bailleul, Ludovic Jullien, Dušan Lazár, and Ladislav Nedbal. 2024. “A Mathematical Model to Simulate the Dynamics of Photosynthetic Light Reactions Under Harmonically Oscillating Light.” Plant Physiology and Biochemistry 217: 109138.\n\n\nNiu, Yuxi, David Fuente, Shizue Matsubara, Dušan Lazár, and Ladislav Nedbal. 2025. “Constitutive and Regulatory Responses of Arabidopsis Thaliana to Harmonically Oscillating Light.” Physiologia Plantarum 177 (4): e70421."
+  },
+  {
+    "objectID": "posts/2025-10-30-Existential-machines/index.html",
+    "href": "posts/2025-10-30-Existential-machines/index.html",
+    "title": "Existential machines",
+    "section": "",
+    "text": "We had the great pleasure, at AIPHI, of hosting Dominique Lestel, who presented his work in a talk entitled Steps to an Ethology of Insurrectionary Machines. His presentation was based on his 2021 book, written from his experience as a field philosopher exploring robotics laboratories such as Gentiane Venture’s lab at the University of Tokyo. The book, Insurrectionary Machines – A Post-Biological Theory of the Living, also features a comic strip by Killoffer running throughout the text.\n\n\n\n\nInsurrectionary Machines by Dominique Lestel\n\n\n\nLestel argues that the rise of AI—and particularly humanoid robots—should prompt us to rethink who we are as humans and what we mean by “living agents.” Taking the example of Sophia, the robot that received Saudi Arabian citizenship, he highlights how these machines fulfill ambiguous needs and generate multiple effects that deserve scrutiny:\n\nToday’s humanoid robots are messianic machines, persuading us that we need them and that they could one day replace humans.\nThey are also metaphysical machines, compelling us to ask fundamental questions—such as where the boundaries of the living truly lie.\nHumanoid robots are conjuring machines, far removed from the impersonal AGI expected by proponents of the technological singularity.\nThese machines disrupt the nature of language, producing utterances detached from any clear frame of reference. When it becomes so easy to “speak from nowhere,” every act of speech can be called into question.\nThey destabilize our sense of what is human: our morality and worldview shift when we can no longer tell whether we are interacting with a person or with something merely appearing to be human.\nFinally, they signal our entry into existential capitalism—a market of artificial companions designed to console us for being only human.\n\nWe need little encouragement to care about existential artifacts, as shown by our attachments to dolls, puppets, or tamagotchis. Redefining living agents through the experience of living with them—and forming hybrid communities alongside them—is a refreshing perspective. It is striking that the question of the human–non-human divide was traditionally posed when humans assumed their superiority over animals, whereas today, in the presence of machines, that superiority is far less certain.\nConsidering hybrid communities is also relevant in the broader context of extending intelligence to non-humans in nature—plants, microbes, or even rivers. Observing how agency circulates among these agents, humans, and machines will be a fascinating dance to follow.\n\n\n\n\nDominique Lestel drawn by Edmund Ronald during the AIPHI seminar\n\n\n\nBelow, you’ll find the recording of the session—unfortunately truncated by about 10 to 15 minutes due to a technical issue.\n\n\nYour browser does not support the audio element."
+  },
+  {
+    "objectID": "posts/2025-10-16-welcome/index.html",
+    "href": "posts/2025-10-16-welcome/index.html",
+    "title": "Welcome to Mil Lieues",
+    "section": "",
+    "text": "Hey! This is a blog about various scientific topics that I find interesting. I will post here my random thoughts and ideas related to modeling, machine learning and biology."
+  },
+  {
+    "objectID": "posts/2026-01-04-Carrot-fields-forever/index.html",
+    "href": "posts/2026-01-04-Carrot-fields-forever/index.html",
+    "title": "Carrot fields forever",
+    "section": "",
+    "text": "Carrots are quite tough to harvest by hand but there is a way to to do it without hurting your back or getting your hands dirty. Grow it virtually!\nFor modelling plants, there are L-system frameworks like L-py[@boudon2012py] which is a dialect of Python enabling the definition of L-systems and their simulation.\nThe first step is to observe a carrot plant and understand its structure. It is important to extract the rules along branching. For example, we can check the images below extracted from an old manuscript and see that each leaf from the root unfolds in a plane. Sub-leaves grow in pairs with opposite angles at level 1 and alternate on each side at the following levels of recursion. We need to translate these rules into an L-system and produce a single leaf.\nThen, in order to produce more realistic plants, we add a stochastic component to the rules. For example, we can add a small random angle to the sub-leaves at each level of recursion. We also include an upward tropism so that the leaves have curvature. Here is an instance of the simulated plant.\nFinally, we can produce a field of carrots by generating a new random instance for each plant. Here is a visualization of the simulated field.\nThe code is available on GitHub."
+  },
+  {
+    "objectID": "posts/2026-01-04-Carrot-fields-forever/index.html#references",
+    "href": "posts/2026-01-04-Carrot-fields-forever/index.html#references",
+    "title": "Carrot fields forever",
+    "section": "References",
+    "text": "References"
   },
   {
     "objectID": "about.html",
