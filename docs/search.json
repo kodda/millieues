@@ -67,14 +67,14 @@
     "href": "posts/2026-01-04-Carrot-fields-forever/index.html",
     "title": "Carrot fields forever",
     "section": "",
-    "text": "Carrots are quite tough to harvest by hand but there is a way to to do it without hurting your back or getting your hands dirty. Grow it virtually!\nFor modelling plants, there are L-system frameworks like L-py[@boudon2012py] which is a dialect of Python enabling the definition of L-systems and their simulation.\nThe first step is to observe a carrot plant and understand its structure. It is important to extract the rules along branching. For example, we can check the images below extracted from an old manuscript and see that each leaf from the root unfolds in a plane. Sub-leaves grow in pairs with opposite angles at level 1 and alternate on each side at the following levels of recursion. We need to translate these rules into an L-system and produce a single leaf.\nThen, in order to produce more realistic plants, we add a stochastic component to the rules. For example, we can add a small random angle to the sub-leaves at each level of recursion. We also include an upward tropism so that the leaves have curvature. Here is an instance of the simulated plant.\nFinally, we can produce a field of carrots by generating a new random instance for each plant. Here is a visualization of the simulated field.\nThe code is available on GitHub."
+    "text": "Carrots are quite tough to harvest by hand but there is a way to to do it without hurting your back or getting your hands dirty. Grow it virtually!\nFor modelling plants, there are L-system frameworks like L-py(Boudon et al. 2012) which is a dialect of Python enabling the definition of L-systems and their simulation.\nThe first step is to observe a carrot plant and understand its structure. It is important to extract the rules along branching. For example, we can check the images below extracted from an old manuscript and see that each leaf from the root unfolds in a plane. Sub-leaves grow in pairs with opposite angles at level 1 and alternate on each side at the following levels of recursion. We need to translate these rules into an L-system and produce a single leaf.\nThen, in order to produce more realistic plants, we add a stochastic component to the rules. For example, we can add a small random angle to the sub-leaves at each level of recursion. We also include an upward tropism so that the leaves have curvature. Here is an instance of the simulated plant.\nFinally, we can produce a field of carrots by generating a new random instance for each plant. Here is a visualization of the simulated field.\nThe code is available on GitHub."
   },
   {
     "objectID": "posts/2026-01-04-Carrot-fields-forever/index.html#references",
     "href": "posts/2026-01-04-Carrot-fields-forever/index.html#references",
     "title": "Carrot fields forever",
     "section": "References",
-    "text": "References"
+    "text": "References\n\n\nBoudon, Frédéric, Christophe Pradal, Thomas Cokelaer, Przemyslaw Prusinkiewicz, and Christophe Godin. 2012. “L-Py: An l-System Simulation Framework for Modeling Plant Architecture Development Based on a Dynamic Language.” Frontiers in Plant Science 3: 76."
   },
   {
     "objectID": "about.html",
