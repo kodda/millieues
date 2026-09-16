@@ -1,0 +1,17 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Mil lieues"
+  site-url: https://kodda.github.io/millieues
+  navbar:
+    right:
+      - about.qmd
+
+format:
+  html:
+    theme: 
+      light: flatly
+      dark: darkly
+    css: styles.css

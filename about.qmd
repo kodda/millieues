@@ -1,0 +1,8 @@
+---
+title: "About"
+image: profile.jpg
+about:
+  template: jolla
+---
+
+Hello, I am David Colliaux researcher at Sony CSL - Paris. This is a blog to post random thoughts (mainly about my research).

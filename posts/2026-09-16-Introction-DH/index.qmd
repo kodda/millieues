@@ -1,0 +1,184 @@
+---
+title: "Introduction to Digital Humanities / Introduction aux humanités numériques"
+author: "David Colliaux"
+date: "2026-09-16"
+categories: [digital humanities]
+filters: []
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    smooth-scroll: true
+    theme: cosmo
+    code-fold: false
+---
+
+<style>
+.language-switcher {
+  display: inline-flex;
+  gap: .35rem;
+  margin: 0 0 1.5rem;
+  padding: .3rem;
+  border: 1px solid var(--bs-border-color, #dee2e6);
+  border-radius: .65rem;
+  background: var(--bs-tertiary-bg, #f8f9fa);
+}
+.language-switcher button {
+  padding: .45rem .9rem;
+  border: 0;
+  border-radius: .4rem;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font-weight: 600;
+}
+.language-switcher button[aria-pressed="true"] {
+  background: var(--bs-primary, #0d6efd);
+  color: #fff;
+}
+.lang-panel[hidden] { display: none !important; }
+</style>
+
+<div class="language-switcher" role="group" aria-label="Language / Langue">
+  <button id="show-fr" type="button" aria-pressed="true">Français</button>
+  <button id="show-en" type="button" aria-pressed="false">English</button>
+</div>
+
+::: {.lang-panel #lang-fr lang="fr"}
+
+# Introduction aux humanités numériques : histoire, apports et critiques
+
+Ce cours de Léa Saint-Raymond, proposé dans le cadre de l’Observatoire des humanités numériques, s’appuie notamment sur l’ouvrage de Pierre Mounier, *Les Humanités numériques. Une histoire critique*. Il retrace les liens étroits entre les sciences humaines et l’informatique, tout en interrogeant les promesses, les limites et les enjeux politiques des humanités numériques.
+
+## Une histoire liée à celle de l’informatique
+
+Les humanités peuvent être définies, dans une perspective inspirée de Jürgen Habermas, comme les disciplines qui étudient le monde social vécu. Leur rencontre avec l’informatique s’inscrit dans une histoire technique plus large, qui va des cartes perforées à la machine de Turing, puis au développement d’IBM, entreprise issue de la fusion de plusieurs sociétés spécialisées dans le traitement mécanographique de l’information.
+
+Le jésuite italien Roberto Busa est généralement considéré comme l’un des pionniers des humanités numériques. À partir de la fin des années 1940, il entreprend d’étudier la *Somme théologique* de saint Thomas d’Aquin en se servant de cartes perforées, d’abord manuellement, puis en collaboration avec IBM. Il utilise notamment le SSEC, ou *Selective Sequence Electronic Calculator*, afin de repérer les occurrences et les cooccurrences de certains mots. Il s’intéresse en particulier à la préposition latine *in*.
+
+Cette démarche provoque un changement de perspective majeur : le texte n’est plus seulement envisagé comme une œuvre à lire et à interpréter, mais comme une base de données composée de mots et susceptible de faire l’objet de traitements automatisés. Le projet de Busa prend ensuite une dimension industrielle avec la création du CAAL, son laboratoire installé à Gallarate, à proximité du site italien d’IBM. Ce laboratoire, financé notamment par Euratom, repose largement sur le travail d’opératrices, qui sont majoritairement des femmes.
+
+La collaboration avec Busa constitue pour IBM une vitrine humaniste. Elle permet à l’entreprise de mettre en avant les usages savants et culturels de ses technologies, alors qu’elle participe également à des projets militaires. Cette rencontre entre des mondes professionnels différents peut être rapprochée de la notion de « zone d’échange », ou *trading zone*, développée par l’historien des sciences Peter Galison.
+
+L’*Index Thomisticus*, résultat du travail de Busa, devient l’une des premières grandes bases de données textuelles consacrées aux humanités. Son informatisation, puis sa mise en ligne, annoncent les corpus numériques aujourd’hui accessibles sur Internet. Après une période de moindre visibilité, les humanités numériques connaissent un nouvel essor au tournant des années 2000, notamment avec la création du Stanford Humanities Lab.
+
+## Ce que les ordinateurs apportent aux humanités
+
+L’un des premiers apports du numérique consiste à faciliter l’accès au patrimoine culturel. Des dispositifs comme *Radiance* proposent ainsi des archives hypertextuelles conçues comme des « jukebox de connaissances ». Leur organisation favorise la sérendipité, c’est-à-dire la possibilité de faire des découvertes inattendues en circulant librement parmi les documents.
+
+Le numérique permet également de renouveler les échelles de lecture. Le *distant reading*, ou « lecture distante », théorisé notamment par Franco Moretti dans ses travaux sur l’émergence du roman, consiste à étudier de très grands ensembles de textes grâce à des méthodes quantitatives. Cette approche, devenue l’un des thèmes les plus fréquemment associés aux humanités numériques, peut être rapprochée de « l’anthropologie en fauteuil » pratiquée par Marcel Mauss, ou encore d’une forme de « littérature en fauteuil » : le chercheur travaille sur des données rassemblées à grande échelle sans nécessairement retourner directement aux sources matérielles.
+
+Plusieurs projets et outils illustrent cette approche, comme la textométrie, Hyperbase, les ressources de l’ATILF ou encore Hyperprince. Leur statut soulève cependant une question importante. Ces bases de données ne sont pas de simples instruments techniques et neutres : leur constitution suppose un travail de sélection, de structuration et d’interprétation. Elles doivent donc être considérées comme des œuvres de l’esprit, reconnues et citées comme telles.
+
+Pour Willard McCarty, figure importante du *humanities computing*, l’ordinateur peut être comparé à un « télescope pour l’esprit ». Il ne remplace pas la recherche, mais permet de faire apparaître des phénomènes jusque-là difficiles à percevoir. Le projet *Mapping the Republic of Letters*, qui cartographie les correspondances entre les savants de l’époque moderne, illustre cette capacité à représenter de vastes réseaux intellectuels.
+
+Ces méthodes comportent néanmoins un risque : celui de produire des recherches insuffisamment ancrées dans les disciplines historiques, littéraires ou philosophiques. L’article consacré à la « culturomique », publié dans *Science* en 2011, a par exemple été critiqué en raison de la faible implication des historiens dans l’analyse et l’interprétation des résultats.
+
+## Pour une critique des représentations numériques
+
+Les humanités numériques ne consistent pas uniquement à appliquer des méthodes mathématiques aux objets culturels. Il faut aussi interroger les catégories et les représentations produites par ces méthodes. Johanna Drucker propose ainsi de passer de la *mathesis*, idéal cartésien d’une connaissance mathématique du monde, à une *aesthesis*, c’est-à-dire à une informatique spéculative qui accorde davantage de place à l’expérience et à la perception.
+
+Drucker distingue notamment les *data* des *capta*. Le terme *data* suppose que les données existent indépendamment de l’observateur et qu’il suffit de les recueillir. La notion de *capta* souligne au contraire que toute donnée est « prise », construite et sélectionnée selon un point de vue particulier. Toute représentation dépend donc d’un rapport situé à l’expérience.
+
+Le projet *Mapping the Republic of Letters* permet de comprendre cette critique. Sur certaines cartes, des lignes droites relient les villes entre lesquelles circulaient les lettres. Or ces traits ne correspondent pas aux itinéraires réellement empruntés. Une représentation plus rigoureuse devrait tenir compte des voies postales, des moyens de transport et des obstacles géographiques afin de restituer le parcours concret des correspondances.
+
+Drucker propose également « d’esthétiser » la représentation du temps, par exemple grâce à des curseurs non linéaires tels que le *now-slider*. Il s’agit de remettre en question l’apparente neutralité des frises chronologiques et des interfaces numériques. Plus généralement, les graphiques doivent faire l’objet d’une lecture critique, car ils produisent souvent de fausses évidences. Les fonds de carte eux-mêmes ont une dimension politique : le tracé des frontières, le choix des noms de lieux et le centrage géographique traduisent toujours une certaine conception du monde.
+
+## Préserver les méthodes critiques des humanités
+
+Le recours au numérique ne doit pas conduire à oublier les méthodes propres aux humanités, fondées sur la critique et l’interprétation. Milad Doueihi, dans *Pour un humanisme numérique* et *La Grande Conversion numérique*, défend ainsi la nécessité d’intégrer le numérique à une réflexion humaniste, au lieu de le considérer comme une simple révolution technique.
+
+Les approches culturomiques connaissent aujourd’hui un regain d’intérêt, notamment avec des structures comme le Culture Lab de l’École normale supérieure. Cette évolution rend d’autant plus nécessaire une réflexion sur la sélection et la conservation des données. Les méthodes de l’archivistique peuvent notamment aider à élaborer des règles de désherbage, c’est-à-dire à déterminer quels documents doivent être conservés, écartés ou supprimés.
+
+Les humanités numériques occupent enfin une place particulière dans la cité académique et posent la question de leur contrat social. Le numérique peut constituer à la fois une béquille et une arme pour les humanités. Il leur fournit de nouveaux outils et une visibilité institutionnelle, mais il peut aussi devenir une contrainte : pour obtenir un financement, les projets de recherche sont souvent incités à intégrer un volet numérique, même lorsque celui-ci n’est pas indispensable.
+
+Les trajectoires professionnelles témoignent également de la proximité entre la recherche numérique et les grandes entreprises technologiques. Jean-Baptiste Michel, premier auteur de l’article de 2011 sur la culturomique, a ainsi rejoint l’entreprise Palantir. Dans le même temps, certains discours institutionnels, notamment au Japon, ont pu envisager de réduire ou de fermer des départements consacrés aux humanités, au nom de leur supposée faible utilité économique.
+
+Ces évolutions conduisent à une question politique centrale : voulons-nous que le développement des humanités numériques aboutisse à une technocratie, dans laquelle les outils et les données seraient contrôlés par quelques spécialistes ou entreprises, ou qu’il favorise une participation citoyenne à la production des savoirs ? Des projets collaboratifs comme PhotosNormandie ou le *Quilt Index* montrent que le numérique peut aussi permettre à des communautés non universitaires de contribuer à la description, à la conservation et à l’interprétation du patrimoine.
+
+Les humanités numériques ne doivent donc être envisagées ni comme une simple application de l’informatique aux sciences humaines ni comme une solution automatique à leurs difficultés. Elles constituent un espace de rencontre entre techniques, disciplines savantes, institutions et société civile. Leur intérêt dépend de notre capacité à utiliser les outils numériques tout en maintenant une réflexion critique sur leurs présupposés, leurs représentations et leurs effets politiques.
+
+:::
+
+::: {.lang-panel #lang-en lang="en" hidden="hidden"}
+
+# Introduction to Digital Humanities: History, Contributions, and Critiques
+
+This course by Léa Saint-Raymond, offered as part of the Digital Humanities Observatory, draws in particular on Pierre Mounier’s book *Digital Humanities: A Critical History*. It traces the close relationship between the humanities and computing while examining the promises, limitations, and political implications of digital humanities.
+
+## A History Closely Connected to Computing
+
+Following an approach inspired by Jürgen Habermas, the humanities can be defined as the disciplines that study the lived social world. Their encounter with computing forms part of a broader technological history, stretching from punch cards and the Turing machine to the development of IBM, a company created through the merger of several firms specializing in the mechanical processing of information.
+
+The Italian Jesuit Roberto Busa is generally regarded as one of the pioneers of digital humanities. Beginning in the late 1940s, he undertook the study of Thomas Aquinas’s *Summa Theologica* using punch cards—initially processed by hand and later through a collaboration with IBM. In particular, he used the SSEC, or *Selective Sequence Electronic Calculator*, to identify occurrences and co-occurrences of specific words. He was especially interested in the Latin preposition *in*.
+
+This approach brought about a major shift in perspective: a text was no longer viewed solely as a work to be read and interpreted, but also as a database composed of words that could be processed automatically. Busa’s project subsequently took on an industrial dimension with the creation of the CAAL, his laboratory in Gallarate, near IBM’s Italian facilities. The laboratory, partly funded by Euratom, relied heavily on female operators.
+
+IBM used its collaboration with Busa as a showcase for the humanistic applications of its technology, even though the company was also involved in military projects. This encounter between different professional and intellectual worlds can be understood through historian of science Peter Galison’s concept of the “trading zone.”
+
+Busa’s *Index Thomisticus* became one of the first major textual databases devoted to the humanities. Its computerization and subsequent publication online anticipated the digital corpora now available on the internet. Following a period of reduced visibility, digital humanities experienced renewed momentum around the turn of the twenty-first century, notably with the creation of the Stanford Humanities Lab.
+
+## What Computers Contribute to the Humanities
+
+One of the primary contributions of digital technology is that it facilitates access to cultural heritage. Systems such as *Radiance* offer hypertext archives designed as “knowledge jukeboxes.” Their organization encourages serendipity—the possibility of making unexpected discoveries while freely exploring documents.
+
+Digital technology also makes it possible to approach texts on new scales. “Distant reading,” theorized notably by Franco Moretti in his research on the emergence of the novel, involves studying very large collections of texts through quantitative methods. This approach, which has become one of the ideas most frequently associated with digital humanities, can be compared to Marcel Mauss’s “armchair anthropology” or to a form of “armchair literary studies”: researchers work with large-scale datasets without necessarily returning directly to the material sources.
+
+Several projects and tools illustrate this approach, including textometry, Hyperbase, the resources developed by ATILF, and Hyperprince. Their status nevertheless raises an important question. These databases are not merely neutral technical instruments: compiling them requires selection, structuring, and interpretation. They should therefore be regarded as intellectual works and properly acknowledged and cited.
+
+For Willard McCarty, an important figure in humanities computing, the computer can be compared to a “telescope for the mind.” It does not replace research, but makes previously difficult-to-perceive phenomena visible. The *Mapping the Republic of Letters* project, which maps correspondence between early modern scholars, illustrates this capacity to represent vast intellectual networks.
+
+These methods nevertheless carry a risk: they may produce research that is insufficiently grounded in historical, literary, or philosophical disciplines. The article on “culturomics” published in *Science* in 2011, for example, was criticized because historians played only a limited role in the analysis and interpretation of its findings.
+
+## Towards a Critique of Digital Representations
+
+Digital humanities are not merely about applying mathematical methods to cultural objects. They must also examine the categories and representations produced by these methods. Johanna Drucker thus proposes a transition from *mathesis*—the Cartesian ideal of mathematical knowledge of the world—to *aesthesis*, or a form of speculative computing that gives greater importance to experience and perception.
+
+Drucker notably distinguishes between *data* and *capta*. The term *data* suggests that information exists independently of the observer and simply needs to be collected. The concept of *capta*, by contrast, emphasizes that all information is “taken,” constructed, and selected from a particular perspective. Every representation therefore depends on a situated relationship to experience.
+
+The *Mapping the Republic of Letters* project helps illustrate this critique. On some maps, straight lines connect the cities between which letters circulated. These lines, however, do not correspond to the routes that the letters actually followed. A more rigorous representation would take postal routes, means of transportation, and geographical obstacles into account in order to reconstruct the correspondence’s actual journey.
+
+Drucker also proposes “aestheticizing” the representation of time, for example through nonlinear interfaces such as the *now-slider*. The goal is to challenge the apparent neutrality of timelines and digital interfaces. More broadly, graphs and visualizations must be read critically because they often produce misleading impressions of self-evidence. Base maps themselves have a political dimension: the drawing of borders, the choice of place names, and geographical centering always express a particular conception of the world.
+
+## Preserving the Humanities’ Critical Methods
+
+The use of digital technology should not lead us to forget the humanities’ own methods, which are grounded in critique and interpretation. In *Digital Cultures* and *The Great Digital Conversion*, Milad Doueihi argues that digital technology must be incorporated into a humanistic reflection rather than treated as a purely technological revolution.
+
+Culturomic approaches are currently experiencing renewed interest, notably through institutions such as the Culture Lab at the École normale supérieure. This development makes it even more necessary to reflect on the selection and preservation of data. Archival methods can help establish rules for appraisal and weeding—that is, determining which documents should be preserved, discarded, or deleted.
+
+Finally, digital humanities occupy a particular position within the academic community and raise questions about their social contract. Digital technology can serve as both a crutch and a weapon for the humanities. It gives them new tools and greater institutional visibility, but it can also become a constraint: research projects are often encouraged to include a digital component to obtain funding, even when such a component is not essential.
+
+Professional trajectories also demonstrate the close relationship between digital research and major technology companies. Jean-Baptiste Michel, the lead author of the 2011 article on culturomics, later joined Palantir. At the same time, some institutional discussions, particularly in Japan, have considered reducing or closing humanities departments on the grounds of their allegedly limited economic usefulness.
+
+These developments lead to a central political question: do we want digital humanities to produce a technocracy in which tools and data are controlled by a small number of specialists or companies, or should they promote public participation in the production of knowledge? Collaborative projects such as PhotosNormandie and the *Quilt Index* demonstrate that digital technology can also enable communities outside academia to contribute to the description, preservation, and interpretation of cultural heritage.
+
+Digital humanities should therefore be understood neither as the mere application of computing to the humanities nor as an automatic solution to their difficulties. They constitute a meeting place for technologies, academic disciplines, institutions, and civil society. Their value depends on our ability to use digital tools while maintaining a critical perspective on their assumptions, representations, and political effects.
+
+:::
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const frButton = document.getElementById("show-fr");
+  const enButton = document.getElementById("show-en");
+  const frPanel = document.getElementById("lang-fr");
+  const enPanel = document.getElementById("lang-en");
+
+  function setLanguage(language) {
+    const french = language === "fr";
+    frPanel.hidden = !french;
+    enPanel.hidden = french;
+    frButton.setAttribute("aria-pressed", String(french));
+    enButton.setAttribute("aria-pressed", String(!french));
+    document.documentElement.lang = language;
+    try { localStorage.setItem("dh-language", language); } catch (_) {}
+  }
+
+  frButton.addEventListener("click", () => setLanguage("fr"));
+  enButton.addEventListener("click", () => setLanguage("en"));
+
+  let savedLanguage = "fr";
+  try { savedLanguage = localStorage.getItem("dh-language") || "fr"; } catch (_) {}
+  setLanguage(savedLanguage === "en" ? "en" : "fr");
+});
+</script>
+

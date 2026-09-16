@@ -1,0 +1,9 @@
+---
+title: "Welcome to Mil Lieues"
+author: "David Colliaux"
+date: "2025-10-16"
+categories: [news]
+---
+
+Hey! This is a blog about various scientific topics that I find interesting. I will post here my random thoughts and ideas related to modeling, machine learning and biology.
+
