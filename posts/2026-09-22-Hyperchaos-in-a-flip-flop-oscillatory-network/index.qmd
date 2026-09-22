@@ -7,8 +7,6 @@ bibliography: refs.bib
 filters: []
 ---
 
-*Flipped-flop oscillatory networks.*
-
 Some almost 20 years ago, I was at **Yoko Yamaguchi**'s Lab where I developped a new model of a flip-flop oscillator with a Milnor attractor. Together with her and **Colin Molter** we published a paper using such oscillators as a simple model of working memory dynamics. It was published in the journal Cognitive Neurodynamics [@colliaux2009working]. In this paper, we jump from the analysis of a 2 units network to simulations of a 80 units network. I always thought there was some interesting behavior to explore in the model with few units (3 or 4) but I never had an opportunity to do so.
 
 ![[Colin was a belgian computer scientist.](https://www.youtube.com/watch?v=ebSRLpy8Rn4)](colin.png)
