@@ -11,7 +11,7 @@ Some almost 20 years ago, I was at **Yoko Yamaguchi**'s Lab where I developped a
 
 ![[Colin was a belgian computer scientist.](https://www.youtube.com/watch?v=ebSRLpy8Rn4)](colin.png)
 
-As such exploration is now easy with AI agents like Claude and ChatGPT, I decided to give it a try. Among the many interesting behaviors and anlysis which resulted from my prompt, I want to share the discovery of **hyperchaos** [@rossler1979equation] in the 4 units network. We consider a modular networt as described below: 
+As such exploration is now easy with AI agents like Claude and ChatGPT, I decided to give it a try. Among the many interesting behaviors and analysis which resulted from my prompt, I want to share the discovery of **hyperchaos** [@rossler1979equation] in the 4 units network. We consider a modular networt as described below: 
 
 ![4 units network](4_units_net.png)
 

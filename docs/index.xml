@@ -29,7 +29,7 @@
 <figcaption><a href="https://www.youtube.com/watch?v=ebSRLpy8Rn4">Colin was a belgian computer scientist.</a></figcaption>
 </figure>
 </div>
-<p>As such exploration is now easy with AI agents like Claude and ChatGPT, I decided to give it a try. Among the many interesting behaviors and anlysis which resulted from my prompt, I want to share the discovery of <strong>hyperchaos</strong> <span class="citation" data-cites="rossler1979equation">(Rössler 1979)</span> in the 4 units network. We consider a modular networt as described below:</p>
+<p>As such exploration is now easy with AI agents like Claude and ChatGPT, I decided to give it a try. Among the many interesting behaviors and analysis which resulted from my prompt, I want to share the discovery of <strong>hyperchaos</strong> <span class="citation" data-cites="rossler1979equation">(Rössler 1979)</span> in the 4 units network. We consider a modular networt as described below:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://kodda.github.io/millieues/posts/2026-09-22-Hyperchaos-in-a-flip-flop-oscillatory-network/4_units_net.png" class="img-fluid figure-img"></p>
